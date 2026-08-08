@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="en/work-dksh.html">En</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="en/work-dksh.html">En</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">Dr.Talk 線上醫學課程平台</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="images/dksh/img-dksh-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                大昌華嘉希望重新設計現有的線上醫學學習平台，並且期待未來可以納入講師、學分、收費機制，來取代實體認證的流程，一方面可推廣醫療產品，另一方面可以優化醫學認證的步驟。
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        DesignLead / UX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        10 month
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 2 Designers, 1 SA, 3 Developer
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                由於此系統觸及醫療相關業務，所以對於身份驗證需十分嚴謹，而客戶非常想了解使用者的喜好，
+                <b>所以對於如何吸引使用者與取得使用者關注的內容需下比較多的功夫。</b>
+            </div>
+        </div>
+        -->
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Pain Points</div>
+            <div class="work-content">
+                原本的線上學習平台在介面呈現上沒有太大問題，主要的痛點為：
+                <ul class="bulletpoint">
+                    <li>先前規劃的功能無法滿足客戶需求</li>
+                    <li>整個網站視覺上給人較生硬的醫療印象</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">User Personas</div>
+            <div class="work-content">
+                根據與利害關係人進行的需求訪談，我們統整出了主要的兩個使用角色，一個是後台的主要使用者-專案經理，主要負責醫療內容的上架與管理，另一個是前台的使用者-醫生，平常會有獲取醫療學習資訊的習慣，或是對某方面醫療資源有學習的需求。
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow" src="images/dksh/img-dksh-persona1-ch.png" alt="">
+        <img class="work-img slidein-object shadow" src="images/dksh/img-dksh-persona2-ch.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Our Goal</div>
+            <div class="work-content">
+                經由上述需求訪談、痛點分析、與決定使用者角色後，我們的設計目標為
+                <b class="goal">根據不同角色提供客製化內容，拉近醫學內容給人的距離感，營造一個可以輕鬆探索的線上學習平台。</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Style Proposal</div>
+            <div class="work-content">
+                釐清目標後，我們提供了兩套視覺風格提案：
+                <br/>
+                <b>「專業大方」</b>採用留白、斜線與淺灰色的搭配來營造清透的視覺感受，給人舒適、不強迫的專業視覺體驗。
+                <br/>
+                <b>「親和簡約」</b>整體形象更加深了圓滑且平易近人的形象，透過插畫輔助減輕使用者在使用醫療平台上壓力的感受。配色添加對比藍色，整體更清新透明且無距離感。
+                <br/><br/>
+                而最後客戶選擇「親和簡約」，但希望Banner調整成以實體圖片為主，加一些裝飾Icon來點綴。
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/dksh/img-dksh-style.png" alt="">
+        <img class="work-img slidein-object" src="images/dksh/img-dksh-character.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Character</div>
+            <div class="work-content">
+                針對不同身份，我們考量特定的內容呈現方式與吸引加入會員的策略。
+                <br/><br/>
+                針對<b>「陌生使用者」</b>，我們注重在品牌的形象傳達，告知陌生使用者我們的核心價值與功能，吸引有興趣的用戶加入會員來瀏覽更多內容。
+                <br/><br/>
+                針對<b>「尚未驗證的會員」</b>，我們希望提供足夠的提示來引導使用者完成驗證，來瀏覽更多專業內容。
+                <br/><br/>
+                針對<b>「已驗證會員」</b>，我們希望提供更多客製化的項目，讓使用者可以更輕鬆的找到有興趣的影片內容。
+            </div>
+        </div>
+        <iframe class="work-iframe slidein-object" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn0iH5mZRhB0dtSlOUlDFPG%2FSean_Website%3Fnode-id%3D874%253A124%26scaling%3Dmin-zoom%26page-id%3D873%253A120" allowfullscreen></iframe>
+        <img class="work-img slidein-object" src="images/dksh/img-dksh-wireframe.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Admin Design</div>
+            <div class="work-content">
+                後台設計與前台相比較為單純，所以我們直接沿用前台的風格來設計，主要功能以提供前台內容為主。
+                <br/><br/>
+                而統計報表是大昌華嘉十分重視的項目之一，我們參考了知名網站分析系統與競品的後台，像是Google, Youtube ,SimilarWeb，並結合客戶的需求來考量。
+                <br/><br/>
+                主要會以瀏覽分析、會員使用狀況、網站內容導向三大方向來設計。
+            </div>
+        </div>
+    </div>
+    <section class="final-work dksh">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Analysis Report</div>
+        </h2>
+        <div class="final-work-block size-s">
+            <img class="slidein-object" src="images/dksh/img-dksh-browse.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">瀏覽分析</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        上方以卡片來呈現重點資訊，下方再以圖表的方式來呈現瀏覽數、停留時間、造訪頁面的詳細情況。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-s align-r">
+            <img class="slidein-object" src="images/dksh/img-dksh-member.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">會員使用狀況</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        以圓餅圖與橫向長條圖來快速了解比例分佈，下方以表格的形式來瀏覽各會員細項。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l">
+            <img class="slidein-object" src="images/dksh/img-dksh-video-type.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">影片類別分析</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        透過長條圖來瀏覽個影片分類的排名，並且用頁籤的方式來快速瀏覽不同根據的排名狀況。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l align-r">
+            <img class="slidein-object" src="images/dksh/img-dksh-video.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">影片分析</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        提列前五名的影片與各項平均數據來快速了解整體觀看狀況，下方以表格的形式來瀏覽各影片細節。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    這個案子十分注重在不同角色所看到的內容，<b>對於UX來說同一個畫面要用3個以上的角度來審視是否都有顧慮到，也讓我更加謹慎在每一個畫面上的權限控管。</b>
+                    <br/><br/>
+                    這次也深入的與SA探討各個報表的數據來源、可行性等等，也更加了解每個網頁中的操作是如何被記錄的。 
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-cec.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">大陸工程雲端管理系統</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="images/cec/img-cec-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

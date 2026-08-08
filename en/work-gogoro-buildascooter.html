@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    /*if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }*/
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="../work-gogoro-buildascooter.html">Ch</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../work-gogoro-buildascooter.html">Ch</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="../images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">Gogoro - Build Your Scooter Optimization</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                <b>Building your scooter</b> is one of the main functions of Gogoro’s official website to interact with users. It allows users to simulate the scooter models and accessories they are interested in online. Due to adjustments over the years in response to business needs, this function has not been able to achieve the original expectations. <b>So the first task assigned after joining Gogoro was to use the existing resources at hand to propose a revision proposal for building your scooter.</b>
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        UI/UX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        3 weeks
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                In order to avoid the leakage of business secrets, Gogoro’s scooter naming and classification method is relatively obscure, and it took me longer to understand it at first. In addition to the optimization of the operating interface, managers also expect to see more motivations for optimization, such as website performance, impact on various departments, sales benefits, etc.
+                <b class="goal">From a business perspective, it is a big test to help users understand the differences between scooters and to independently sort out supporting data other than interface design.</b>
+            </div>
+        </div>
+    </div>
+    <section class="before-pain-points">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Pain Points</div>
+        </h2>
+        <div class="center-block">
+            <div class="double-img">
+                <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-pp1-1.png" alt="">
+                <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-pp1-2.png" alt="">
+            </div>
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    <div class="caption-step">Step1</div>
+                    Select Scooter
+                </div>
+                <div class="work-content">
+                    The first step in building your scooter is to choose a scooter. Generally, the most important thing when choosing a scooter model is not only the appearance, but also the clear classification and price. From the top, you can see <b>different scooter sizes, repeated scooter models, and unexplained banners.</b> These will affect the user's choice of scooter, and they will not be able to choose a scooter comprehensively.
+                    <b class="goal">Repeated and confusing information presentation will affect users’ judgment in scooter selection.</b>
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-pp2.png" alt="">
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    <div class="caption-step">Step2</div>
+                    Choose Color
+                </div>
+                <div class="work-content">
+                    The second step is to choose the color. The obvious amount on the upper right can easily be thought of as the scooter price, but it is actually the "government subsidy amount." After asking, it had originally been the scooter price, but was changed to the subsidy amount for business reasons.
+                    <br/><br/>
+                    The scooter color selection section below also includes the function of switching to other scooter models. Although it is more convenient for switching in this way, it also limits the space for "selecting colors".
+                    <b class="goal">Irrelevant information and duplicate functions make simple steps complicated.</b>
+                </div>
+            </div>
+            <div class="double-img">
+                <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-pp3-1.png" alt="">
+                <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-pp3-2.png" alt="">
+            </div>
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    <div class="caption-step">Step3</div>
+                    Accessories
+                </div>
+                <div class="work-content">
+                    Before entering "Accessories Selection", you must scroll down to see the "Next" button, and it is presented in a light gray style. It is very easy for users to mistakenly think that they need to switch tabs or click on the "Discount Estimate" in the upper right corner.
+                    <br/><br/>
+                    When selecting accessories, some accessories have pre-purchasing restrictions. For example, you must buy A before you can buy B. However, the system only prompts through text. So users have to memorize the name and scroll down to find it after dismiss the prompts.
+                    <b class="goal">The steps of flow and the system prompts are not friendly enough, and the operation smoothness is very poor.</b>
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-pp4.png" alt="">
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    <div class="caption-step">Step4</div>
+                    Submit Quotation
+                </div>
+                <div class="work-content">
+                    The last step is "Discount Calculation". After clicking the button, a window will pop up to display complex government subsidy forms and personal information fields. As the last step of "building your scooter", there's a huge gap between the result and the user's expectations.
+                    <br/><br/>
+                    Even if the total price cannot be displayed due to business considerations, filling in such a complicated form will discourage people from doing so, and will not benefit either the user or the company.
+                    <b class="goal">The cost to complete the process is too high, inconsistent with the user’s initial expectations, and the conversion rate is very low.</b>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="center-block">
+        <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-ga.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Google Analytics</div>
+            <div class="work-content">
+                In order to understand the current completion status of building your scooter, we specifically asked front-end colleagues to provide GA data from the past two months. It can be seen that <b>the average conversion rate is less than 1%, and even the conversion rate of natural search is very low, so there must be some problems with the process.</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-store.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Stakeholder Interviews</div>
+            <div class="work-content">
+                In addition to the pain points in the interface, I also had to find out if there were other motivations for optimization, so I chose to arrange interviews at Gogoro stores, starting from the interaction between front-line sales staff and customers, to see <b>whether it's useful in the entire transaction process. And extend the questionnaire to how "building your scooter" affect sales and customers.</b>
+            </div>
+        </div>
+        <div class="double-img">
+            <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-interview1.png" alt="">
+            <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-interview2.png" alt="">
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">How</div>
+            <div class="work-content">
+                The main purpose of the interview structure was to <b>understand the daily process at the store and the interaction with customers, and then extend to related questions about the official website and building your scooter.</b> I planned all interviews alone, <b>visited 4 stores in total and conducted 6 interviews, including store managers and senior sales staff.</b>
+                <br/><br/>
+                The following is divided into four key points, <b>clarifying needs, assisting tools, common pain points, and interview observations.</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-interview3.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Needs</div>
+            <div class="work-content">
+                The questions asked by each store's sales when exploring customer needs are similar, but the order is different, such as commuting or leisure use, how far they ride, preferred scooter weight, whether they have ever ridden a gasoline motorcycle, and of course the last important budget considerations.
+                <b class="goal">Understanding customer preferences and needs can be systematized</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-interview4.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Assistant Tools</div>
+            <div class="work-content">
+                During the interview, it was found that in addition to scooter-related issues, the sales staff also needs to help customers eliminate other concerns, such as the style of accessories, the convenience of battery swapping, the difference with gasoline motorcycles, etc. Some concerns are also caused by the lack of clear information from the official website.
+                <br/><br/>
+                Therefore, the various functions of the official website are tools the sales team relies on, and even senior store managers will make their own presentations to explain them.
+                <b class="goal">If the functions of the official website are properly designed, it will be helpful to the communication between sales and customers.</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-interview5.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Common Issues</div>
+            <div class="work-content">
+                Most of the feedback from store sales on the functions of the official website is that there is a gap between information and actual needs. For example, it is impossible to understand the actual use effect of accessories, not sure how to find a suitable scooter model, inefficient use of specification comparison tables, etc.
+                <b class="goal">The impact of the function on the official website on the store cannot be underestimated. It can be a tool to assist communication, or it can increase the business burden of communication and clarification.</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Summary</div>
+            <div class="work-content">
+                It can be seen that <b>the positive benefits to optimize "building your scooter" are not only a fun experience for users, but also it can reduce communication costs on the store side and improve sales performance</b>. If it can be combined with the order system, it can even improve overall operating efficiency.
+                <b class="goal">When the sales receives customers, it is like the offline version of building your scooter. Therefore, if we can show the value of building your scooter online, it will definitely reduce the burden on the store and increase the willingness to buy.</b>
+            </div>
+        </div>
+    </div>
+    <section class="mockup gogoro-buildascooter">
+        <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup1.png" alt="">
+        <div class="center-block">
+            <div class="work-block slidein-object">
+                <div class="sec-tit">Optimization Strategy</div>
+                <div class="work-content">
+                    Based on the pain point analysis and interview observations above, I focuses on the revision to allow users to have a relaxed and interesting attitude when building their own scooter. It can also help users find a suitable scooter model and generate interest in the process. Finally, according to their needs to provide flexible goals to increase conversion rates.
+                    <b class="goal">Approach it with curiosity and playfulness, generate interest in the process of creation, and finally provide options that create a win-win situation</b>
+                </div>
+            </div>
+        </div>
+        <div class="mockup-center darker-bg">
+            <div class="center-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Select scooter and color</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    Pictures are not the only focus while building a scooter online. It is more important to convert the scooter's performance and specifications into a method that users can easily understand and further filter.
+                </div>
+            </div>
+            <div class="mockup-img-center loop-assets slidein-object">
+                <img class="mockup-pop pop-up" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup2-1.png" alt="">
+                <img class="mockup-pop" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup2-2.png" alt="">
+                <img src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup2.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-left">
+            <div class="mockup-left-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Can't decide?</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    Tell us your preferences and we will recommend a scooter model for you.
+                </div>
+            </div>
+            <div class="mockup-img-right loop-assets slidein-object">
+                <img class="mockup-reveal reveal-in" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup3.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup3-1.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup3-2.png" alt="">
+                <img src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup3.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-full">
+            <div class="mockup-full-text bottom-right">
+                <h3 class="bottomIn-object">
+                    <div class="bottomIn-content">Scooter Accessories</div>
+                </h3>
+                <div class="work-content slidein-object">
+                    Choose scooter accessories
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup4.png" alt="">
+        </div>
+        <div class="mockup-top-left">
+            <div class="mockup-top-left-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Grouping, Friendly, Easy</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    Grouping accessories to browse the same type at once. If you need to purchase additional pre-installed accessories, they will be displayed directly in the pop-up.
+                </div>
+            </div>
+            <div class="mockup-img loop-assets slidein-object">
+                <img class="mockup-reveal reveal-in" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup5.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup5-1.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup5-2.png" alt="">
+                <img src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup5.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-right darker-bg">
+            <div class="mockup-right-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Take it easy</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    Fill in your email address and you'll get a quote for the scooter. And you can add it to your favorite first, we will notify you if there are any purchase discounts!
+                    <br/><br/>
+                    Users will have different expectations and needs based on their purchase intentions. Therefore, providing corresponding entrances can increase the conversion rate of the entire process.
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup6.png" alt="">
+        </div>
+        <div class="mockup-full">
+            <div class="mockup-full-text bottom-right white-content">
+                <h3 class="bottomIn-object">
+                    <div class="bottomIn-content">Mobile Design</div>
+                </h3>
+                <div class="work-content slidein-object">
+                    Mobile device
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup7.png" alt="">
+        </div>
+        <div class="mockup-split">
+            <div class="mockup-split-left title-split">
+                <div class="mockup-split-left-block">
+                    <h2 class="bottomIn-object">
+                        <div class="bottomIn-content">Quick swipe</div>
+                    </h2>
+                    <div class="work-content slidein-object">
+                        Just one finger swipe to quickly browse accessories.
+                    </div>
+                </div>
+                <img class="slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-wireframe.png" alt="">
+            </div>
+            <div class="mockup-split-right watermark-split">
+                <div class="mockup-watermark bottomIn-object">
+                    <div class="bottomIn-content">Quick Swipe</div>
+                </div>
+                <div class="mockup-split-video-block slidein-object">
+                    <video class="mockup-split-video" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-video.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+                        <source data-src="../images/gogoro-buildascooter/img-gogoro-buildascooter-video.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="mockup-center mockup-end darker-bg">
+            <div class="center-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Other<br/>Mobile UI</div>
+                </h2>
+            </div>
+            <img class="work-img slidein-object" src="../images/gogoro-buildascooter/img-gogoro-buildascooter-mockup8.png" alt="">
+        </div>
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    Before joining a product company, I always wanted to understand how the product company uses the resources to optimize products. Although this was never a formal project, I also took this opportunity to use store resources and analyze data to collect and verify.
+                    <br/><br/>
+                    Even though this was only a proposal, <b>I personally enjoy the process of arranging actual interviews and using these opinions to optimize the product.</b>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-gogoro-gds.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">Gogoro Scooter Diagnostic System - Optimization</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="../images/gogoro-gds/img-gogoro-gds-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

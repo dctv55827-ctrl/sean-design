@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="../work-dksh.html">Ch</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../work-dksh.html">Ch</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="../images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">Dr.Talk Online Learning Medical Platform</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="../images/dksh/img-dksh-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                DKSH hopes to redesign the existing online medical learning platform, and looks forward to incorporating lecturers, credits, and charging system in the future to replace the process of physical certification. On the one hand, it can promote medical products, and on the other hand, it can optimize the steps of medical certification.
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        Design Lead / UX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        10 months
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 2 Designers, 1 SA, 3 Developers
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                Since this system involves medical-related business, the process of identity verification are very strict, and the clients want to know the preferences of users, 
+                <b>so it takes a lot of effort to attract users and get their attention.</b>
+            </div>
+        </div>
+        -->
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Pain Points</div>
+            <div class="work-content">
+                The original online learning platform has no major problems in interface presentation. The main pain points are:
+                <ul class="painpoint">
+                    <li>The existing website function cannot meet future needs</li>
+                    <li>The entire visual of website gives a more rigid medical impression</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">User Personas</div>
+            <div class="work-content">
+                According to the requirement interviews with stakeholders, we have unified two main user personas, one is the main user in the back-end - the project manager, who is mainly responsible for the maintenance of medical contents on the platform, and the other is the user in the front-end - Doctors, usually have the habit of obtaining medical learning information, or have a need to learn some medical resources.
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow" src="../images/dksh/img-dksh-persona1-en.png" alt="">
+        <img class="work-img slidein-object shadow" src="../images/dksh/img-dksh-persona2-en.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Our Goal</div>
+            <div class="work-content">
+                After requirement interview, pain point analysis, and determination of user personas, our design goal is to
+                <b class="goal">Provide customized content according to different roles, shorten the distance between medical content and create an online learning platform that can be easily explored.</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Style Proposal</div>
+            <div class="work-content">
+                After clarifying the project goal, we provide two visual styles:
+                <br/>
+                <b>"Elegance"</b> uses a combination of blank space, slashes, and light gray to create a clear visual experience, giving people a comfortable and unforced professional visual experience.
+                <br/>
+                The overall image of <b>"Simplicity"</b> strengthens the smooth and approachable image, and reduces the user's feeling of pressure on the medical platform through illustrations. The color use contrasting color - blue to make the whole visual fresher and have no sense of distance.
+                <br/><br/>
+                In the end, the customer chose "Simplicity", but hoped that the banner should be adjusted to focus on physical pictures with some decorative icons.
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/dksh/img-dksh-style.png" alt="">
+        <img class="work-img slidein-object" src="../images/dksh/img-dksh-character.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Character</div>
+            <div class="work-content">
+                For different identities, we have to consider specific content presentation methods and strategies to attract members.
+                <br/><br/>
+                For "Strangers", we focus on the communication of the brand's image, inform them of our core values and functions, and attract interested users to join members to browse more content.
+                <br/><br/>
+                For "Unverified Members", we hope to provide enough instruction to guide the users to finish verification and browse more professional content.
+                <br/><br/>
+                For "Verified Members", we hope to provide more customized items to let users easily find interesting video content.
+            </div>
+        </div>
+        <iframe class="work-iframe slidein-object" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn0iH5mZRhB0dtSlOUlDFPG%2FSean_Website%3Fnode-id%3D874%253A124%26scaling%3Dmin-zoom%26page-id%3D873%253A120" allowfullscreen></iframe>
+        <img class="work-img slidein-object" src="../images/dksh/img-dksh-wireframe.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Admin Design</div>
+            <div class="work-content">
+                Compared with the frontend, the backend design is relatively simple, so we directly follow the style of the frontend to design, and the main function is to provide the content of the frontend.
+                <br/><br/>
+                And the analysis report is one of the important functions that DKSH cares about, we refer to the famous analysis backend systems, such as Google, Youtube, and SimilarWeb. 
+                <br/><br/>
+                We focus on the three primary directions to design which are browsing analysis, member usage, and website content orientation.
+            </div>
+        </div>
+    </div>
+    <section class="final-work dksh">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Analysis Report</div>
+        </h2>
+        <div class="final-work-block size-s">
+            <img class="slidein-object" src="../images/dksh/img-dksh-browse.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Browse Analytics</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        The key information is presented with cards at the top, and the details of the number of browsing, stay time, and visited pages are presented in charts at the bottom.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-s align-r">
+            <img class="slidein-object" src="../images/dksh/img-dksh-member.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Member Usage</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        Use the pie chart and horizontal bar chart to quickly understand the proportion distribution, and browse the details of each member in the form of a table below.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l">
+            <img class="slidein-object" src="../images/dksh/img-dksh-video-type.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Video Type Analytics</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        Browse the ranking of each video category through the bar chart, and use the tabs to quickly browse the ranking status of different categories.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l align-r">
+            <img class="slidein-object" src="../images/dksh/img-dksh-video.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Video Analytics</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        List the top five videos and various average data to quickly understand the overall browsing status, and browse the details of each video in the form of a table below.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    This case pays great attention to the content by different roles. 
+                    <b>For UX, it is necessary to examine the same screen from at least three perspectives to see if there are concerns, which also makes me more careful about the permission control on each screen.</b>
+                    <br/><br/>
+                    I have had deep discussions with SA during this project to investigate each report, like the data resource and feasibility, and I came to understand how the data is recorded.  
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-cec.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">CEC Cloud Manage System</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="../images/cec/img-cec-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

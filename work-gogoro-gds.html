@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    /*if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }*/
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+
+            //slick 圖片輪播
+            $(".slick-arrows").slick({
+                fade: true,
+                infinite: false,
+                dots: true,
+                responsive: [
+                    {
+                    breakpoint: 950,
+                    settings: {
+                        arrows: false
+                    }
+                    }
+                ]
+            });
+            $(".slick-auto").slick({
+                arrows: false,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                pauseOnHover: false,
+                easing: 'ease-out'
+            });
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="en/work-gogoro-gds.html">En</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="en/work-gogoro-gds.html">En</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">Gogoro Dianostic System - 車輛診斷系統優化</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-gds/img-gogoro-gds-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                <b>Gogoro Diagnostic System 簡稱 GDS</b> 是 Gogoro 的維修技師拿來偵測、診斷自家車輛電控元件是否正常的系統。<b>由於當時常常收到車主反饋維修保養後並沒有解決當初發現的問題，公司認為是第一線維修人員並沒有好好遵守維修保養的 SOP 而導致的。</b>
+                <br/><br/>
+                而 GDS 是 Gogoro 草創初期設計的應用程式，<b>介面樣式較老舊</b>，所以一開始專案的優化方向除了將調整流程來減少斷點，還包含提升舊有介面的易讀性。
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        UI/UX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        3 months
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 Manual Writer, 1 PM, 1 Designer, 1 Developer
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                <b>一開始接手專案時，認為公司對於第一線技師行為的推斷有點偏頗</b>，畢竟整段維修流程有許多變因，車主的描述是否屬實、系統檢測的準確度、維修手冊的有效性、技師能維修的時間等等。<b>所以在動工調整前，釐清真實維修的痛點來決定優化的方向是一個重要的考驗。</b>
+                <br/><br/>
+                而此次優化的主軸是子流程整合，所以在調整介面時須在考量原先架構與元件的運用下，去盡可能的優化易讀性與整合流程後的易用性。
+                <b class="goal">需花費較多的時間來釐清真實維修的痛點，在流程整合設計時也須在原先的架構限制下，來優化易讀性與易用性</b>
+            </div>
+        </div>
+    </div>
+    <section class="info-architecture">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">
+                Original<br/>Information Architecture
+            </div>
+        </h2>
+        <div class="work-block slidein-object">
+            <div class="work-content">
+                只顯示此專案相關重點功能
+            </div>
+        </div>
+        <img class="slidein-object" src="images/gogoro-gds/img-gogoro-gds-ia.png" alt="">
+    </section>
+    <section class="before-pain-points">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Pain Points</div>
+        </h2>
+        <div class="center-block">
+            <!--<div class="work-img loop-assets slidein-object">
+                <img class="mockup-reveal reveal-in" src="images/gogoro-gds/img-gogoro-gds-painpoints1.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-painpoints2.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-painpoints3.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-painpoints4.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-painpoints5.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-painpoints6.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-painpoints7.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-painpoints8.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-painpoints9.png" alt="">
+                <img src="images/gogoro-gds/img-gogoro-gds-painpoints1.png" alt="">
+            </div>-->
+            <div class="work-img slidein-object slick-arrows">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints1.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints2.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints3.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints4.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints5.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints6.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints7.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints8.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-painpoints9.png" alt="">
+            </div>
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    Pain Points
+                </div>
+                <div class="work-content">
+                    介面上比較明顯的痛點包含層級之間文字大小的對比不明顯，預設元件與灰色的過度使用導致易讀性不佳。再來操作方面流程的步驟是以條列文字呈現，步驟之間的區隔感太少，也容易誤觸右下方的按鈕。
+                    <b class="goal">過時的介面設計，流程動線不順、較難理解的操作元件與易讀性較差的文字與留白，都值得妥善整理與優化</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="center-block">
+        <img class="work-img slidein-object" src="images/gogoro-gds/img-gogoro-gds-technician.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">User Interviews</div>
+            <div class="work-content">
+                為了釐清第一線技師實際維修時的使用情境，我與 PM 到維修門市進行訪談，<b>希望能了解維修時會遇到的狀況與 GDS 的實際使用體驗，特別是進廠診斷與智慧診斷的操作。</b>
+            </div>
+        </div>
+        <div class="double-img">
+            <img class="work-img slidein-object" src="images/gogoro-gds/img-gogoro-gds-interview1.png" alt="">
+            <img class="work-img slidein-object" src="images/gogoro-gds/img-gogoro-gds-interview2.png" alt="">
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Interview Structure</div>
+            <div class="work-content">
+                訪鋼結構主要以了解維修技師一天的工作流程開始，再延伸到維修保養的 SOP 、接著是進廠診斷與智慧診斷相關的議題，最後是詢問 GDS 的操作心得與回饋。
+                <br/><br/>
+                總共<b>造訪 2 間門市，進行 4 場訪談，包含店長與資深技師。</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Interview Insights</div>
+            <div class="work-content">
+                訪談後我們發現技師在維修時對 GDS 的依賴，比我們想像還來得低，以下是訪談後觀察到的重點：
+                <ul class="bulletpoint">
+                    <li>公司規定只要車主有預約保養就必須使用「進廠診斷」。</li>
+                    <li>整個保養平均 30-40 分鐘，最多 90 分鐘。</li>
+                    <li>保養流程中使用 GDS 的佔比可能不到 5 分鐘。</li>
+                    <li>使用「進廠診斷」後如果還是無法解決車主的問題，才會使用「智慧診斷」。</li>
+                    <li>診斷出最高等級的項目會優先處理，其餘車主有提到才會去做處理，因為有些只是誤觸，時間也不夠。</li>
+                    <li>維修後再次發生同樣問題的情況大多都不是 GDS 的問題。</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Interview Summary</div>
+            <div class="work-content">
+                對於技師而言，進廠診斷是公司規定的作業流程，所以人性上很容易視為交作業，但<b>即使技師想好好維修，現況的確有諸多阻礙的因素</b>，例如：一台車分配到保養的時間有限、診斷結果的項目等級容易導致誤判、維修資料不夠完整，還有現場車主的期待需滿足等等。
+                <br/><br/>
+                <b>撇除公司期待來說，我們的確觀察到流程整合的優點</b>，畢竟進廠診斷只是比智慧診斷多一個系統偵測的步驟，後續操作基本上是一樣的，所以<b>透過流程整合來提升作業效率、減少斷點是十分有機會的。</b>
+                <b class="goal">技師實際的維修狀況跟公司端的推斷的確有落差，與其用指責的態度來管控，不如以提升作業效率的角度來協作，讓技師專注在維修流程上，提供更好的服務品質。</b>
+            </div>
+        </div>
+    </div>
+    <section class="mockup gogoro-gds">
+        <img class="work-img slidein-object" src="images/gogoro-gds/img-gogoro-gds-mockup1.png" alt="">
+        <div class="center-block">
+            <div class="work-block slidein-object">
+                <div class="sec-tit">Optimization Strategy</div>
+                <div class="work-content">
+                    在公司對於流程整合管控的期許下，再納入技師訪談的觀察，我們希望整合的重點是<b>以簡化技師作業流程的方向出發</b>，透過介面設計來強化識別與提醒，協助技師快速找出重要維修項目，在步驟切換的過程中加入適當的提示減輕認知與記憶負荷。
+                    <b class="goal">在流程整合中，以提升技師作業效率為出發點，協助快速找到重點維修項目，輔助提示減少流程斷點。</b>
+                </div>
+            </div>
+        </div>
+        <div class="mockup-center darker-bg">
+            <div class="center-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Contrast Enhancement</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    過往 GDS 的主要顏色都偏暗沉一點，導致主要按鈕的易讀性不佳，
+                    所以透過提高主要顏色的飽和度，讓整體視覺在瀏覽辨識上更舒適。
+                </div>
+            </div>
+            <!--<div class="mockup-img-center loop-assets slidein-object">
+                <img class="mockup-reveal reveal-in" src="images/gogoro-gds/img-gogoro-gds-mockup2-1.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-gds/img-gogoro-gds-mockup2-2.png" alt="">
+                <img src="images/gogoro-gds/img-gogoro-gds-mockup2-1.png" alt="">
+            </div>-->
+            <div class="mockup-img-center slidein-object slick-auto">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-mockup2-1.png" alt="">
+                <img class="" src="images/gogoro-gds/img-gogoro-gds-mockup2-2.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-center">
+            <div class="center-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Not just integration</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    不只是為了整合而整合，順暢的操作動線、快速辨別重要項目、清楚的資訊層級都需一併考慮。
+                </div>
+            </div>
+            <div class="mockup-img-center loop-assets slidein-object">
+                <img src="images/gogoro-gds/img-gogoro-gds-mockup3.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-split">
+            <div class="mockup-split-left">
+                <img class="slidein-object" src="images/gogoro-gds/img-gogoro-gds-mockup4-1.png" alt="">
+            </div>
+            <div class="mockup-split-right">
+                <img class="slidein-object" src="images/gogoro-gds/img-gogoro-gds-mockup4-2.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-top-left">
+            <div class="mockup-top-left-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Smart diagnostic</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    執行排解流程時，左側的項目列表會凸顯正在排解項目，除了達到提醒作用，也提供切換項目的彈性。
+                </div>
+            </div>
+            <div class="mockup-img loop-assets slidein-object">
+                <img src="images/gogoro-gds/img-gogoro-gds-mockup5.png" alt="">
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-gds/img-gogoro-gds-scenario1.png" alt="">
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    很慶幸一開始提出質疑時，PM 可以跟設計師站在相同立場，願意一起去維修門市訪談，透過更了解技師的維修過程中來規劃能降低許多學習成本。
+                    <br/><br/>
+                    重新設計後的系統上線後，已在各個服務門店投入日常使用。我在系統推出後不久就離開了公司，所以沒有機會衡量其普及程度——我在離開前從技術人員那裡收集到的反饋基本上都是正向的，也表示希望未來可以持續協助優化系統。
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-gogoro-gostation.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">Gogoro GoStation - 換電站流程優化</div>
+                <p>Product Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="images/gogoro-gostation/img-gogoro-gostation-cover-full.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="../work-btox.html">Ch</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../work-btox.html">Ch</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="../images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">BTOX Online Order System</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="../images/btox/img-btox-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                BTOX is a leading expert in vertical integration of "customized" glasses. It is the largest customized contact lens manufacturer in Asia - Hengtai Optical, with three-party integration resources of R&D, manufacturing and application.
+                <br/><br/>
+                Since the business scope of BTOX involves domestic and overseas markets, and they used to manage the orders of the two markets through two separate systems. The purpose of this project is 
+                <b>to build up an online order system that integrate domestic and overseas markets based on the requirement of customer service, and reduce the communication cost of sales and doctors.</b>
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        Design Lead / UI Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        11 months
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 4 Designers, 1 SA, 5 Developers
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                Due to the separate system and different business strategies of domestic and overseas markets, and BTOX also arrange two departments to manage separate markets. 
+                <b>So how to convince the clients that there must be some sacrifice due to the integration of domestic and overseas markets is a big problem.</b>
+                <br/><br/>
+                The order system contains frontend and backend, and the data of lens product makes the display of information more complicated, so how to clearly display the complete information on the interface and meet the system consistency and RWD layout is also a major challenge.
+            </div>
+        </div>
+        -->
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Pain Points</div>
+            <div class="work-content">
+                Due to the separate system and different business strategies of domestic and overseas markets, and BTOX also arrange two departments to manage separate markets. At present, the style of the order admin system is too plain, and the information presentation is relatively unclear, so we have sorted out the following pain points:
+                <ul class="painpoint">
+                    <li>Using two sets of systems to manage orders in domestic and overseas markets makes it difficult for internal personnel to follow-up integration and requires additional maintenance costs</li>
+                    <li>The old system style leads to unclear presentation of information, and the operation process is also complicated, making it difficult to find corresponding functions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">User Personas</div>
+            <div class="work-content">
+                According to the requirement interviews with stakeholders, we have unified two user personas, one is the main user for back-end system - the customer service specialist, who mainly handles the orders sent by the front-end, and the other is the user for the front-end system - responsible for processing the corneal data of the patient, and place an order through the front-end system to BTOX.
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow" src="../images/btox/img-btox-persona1-en.png" alt="">
+        <img class="work-img slidein-object shadow" src="../images/btox/img-btox-persona2-en.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Our Goal</div>
+            <div class="work-content">
+                After requirement interview, pain point analysis, and determination of user personas, we realized the importance of domestic and overseas integration, and there are many parts of the entire order process that need to be optimized, so our primary goal is to
+                <b class="goal">While integrating domestic and overseas systems, optimize the operation process of orders and ensure that each function has sufficient flexibility to meet the needs of each role.</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Style Proposal</div>
+            <div class="work-content">
+                After clarifying the project goal, we provide two visual styles:
+                <br/>
+                The main goal of <b>"Professional and Comfortable"</b> is to strengthen the brand image and exposure. Use a simple style and white space to increase browsing comfort, and use right-angle elements in the layout design to create a professional and stable visual experience.
+                <br/>
+                <b>"Lively and Innovative"</b> takes the functional layout as the basis for the design, and pays attention to the organization of functions and spaces. Rounded corners are used in the layout design to make the overall vision smoother, and bright colors and icons are used to create a lively and innovative visual experience.
+                <br/><br/>
+                In the end, the clients chose the layout of "Lively and Innovative", and they prefer to use a more calm and restrained blue of "Professional and Comfortable".
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/btox/img-btox-style.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Wireframe</div>
+            <div class="work-content">
+                UX Designer will draw wireframes according to functional map and requirement interviews, and design UI Flow after confirming with SA. All the designers will join together to have a discussion and brainstorming, after confirming by clients, the UI Designer will finish the design based on UX documents.
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/btox/img-btox-wireframe.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">UI Elements</div>
+        </div>
+        <img class="work-img slidein-object" src="../images/btox/img-btox-icon.png" alt="">
+        <img class="work-img slidein-object shadow" src="../images/btox/img-btox-empty status.png" alt="">
+    </div>
+    <section class="final-work btox">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Final Design</div>
+        </h2>
+        <div class="final-work-block size-s">
+            <img class="slidein-object" src="../images/btox/img-btox-index.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Front-end Homepage</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        Function-oriented, providing the functions that are used frequently by users on the homepage, such as recently purchased products, pending orders, and pending lenses, to improve the user's operating efficiency.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-s align-r">
+            <img class="slidein-object" src="../images/btox/img-btox-product list.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Product</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        Use the product pictures without background and shadows to create a sense of technology, and present product characteristics through different color labels.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l">
+            <img class="slidein-object" src="../images/btox/img-btox-admin.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Back-end Homepage</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        Orders are the items that need to be followed most frequently for BTOX customer service, so the four most important order statuses are directly listed on the homepage, and the illustrations are used to improve the status recognition and user operation for management.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l align-r">
+            <img class="slidein-object" src="../images/btox/img-btox-login.jpg" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Login</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        In addition to enhancing the brand image, the carousel block on the left can also be used for announcement or marketing purposes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    In this case, I played the roles of Lead and UI Designer at the same time, so I put a lot of effort into hign design quality and letting designers express their ideas. In the end, we achieved consensus among team members through close communication and responsibility orientation.
+                    <br/><br/>
+                    The integration of domestic and overseas systems has always been a difficult problem for us to communicate with clients. We struggled to narrow down the client's requirements, it's like putting two different systems on one website. 
+                    <b>So before the project starts, it is necessary to let the customer understand the future trend and system limitations, and let the customer realize the importance of future expansion and maintenance costs.</b>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-cathay.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">Cathay Health Reservation Platform</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="../images/cathay/img-cathay-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

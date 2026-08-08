@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    /*if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }*/
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="../work-gogoro-gostation.html">Ch</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../work-gogoro-gostation.html">Ch</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="../images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">Product Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">Gogoro GoStation - Optimization</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-gostation/img-gogoro-gostation-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                <b>GoStation, also known as "Battery Swapping Station"</b>, mainly provides Gogoro scooter owners with energy exchange services. In addition to Taiwan, Gogoro has been expanding to other countries. <b>I was responsible for the design of the functions and operations on the GoStation interface.</b>
+                <br/><br/>
+                <b>The design scope includes the planning of information structure and user flows, and will also run usability testing if verification is needed.</b> The visual interface is extended with the concept of design guideline. If there are new 3D material requirements, a professional team will be asked to cooperate with the output.
+                <br/><br/>
+                In this product, the items I was responsible for were:
+                <ul class="bulletpoint">
+                    <li>Modularize Information Templates</li>
+                    <li>Welcome Section Optimization</li>
+                    <li>Abnormal Battery Issue Reporting</li>
+                </ul>
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        Product Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 1 Designer, 2 Developers
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <img class="work-img slidein-object" src="../images/gogoro-gostation/img-gogoro-gostation-proj1-1.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                <div class="caption-step">Project 1</div>
+                Modular
+            </div>
+            <div class="work-content">
+                The blue area on the right above is <b>GoStation's commonly used information display template.</b> In the past, GoStation's interface design focused on the visual balance of each language, so even if the layout looks similar, the spacing and font size will be slightly different, and there is no modularization. We will see the difference more clearly through the picture below.
+            </div>
+        </div>
+        <img class="work-img slidein-object desktop" src="../images/gogoro-gostation/img-gogoro-gostation-proj1-2.png" alt="">
+        <img class="work-img slidein-object mobile" src="../images/gogoro-gostation/img-gogoro-gostation-proj1-2_m.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Challenge
+            </div>
+            <div class="work-content">
+                From the pictures above, we can see that there are various spacing just due to the different languages ​​and blocks. Although you can understand why "fine-tuning" is needed based on each situation, <b>when it comes to extending multi-language situations, the maintenance cost is unimaginable.</b>
+                <br/><br/>
+                In addition to spacing, <b>the integration of fonts, font sizes, line-height, etc. in different languages ​​also needs to be carefully considered. After all, these pages are already familiar to current users.</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object desktop" src="../images/gogoro-gostation/img-gogoro-gostation-proj1-3.png" alt="">
+        <img class="work-img slidein-object mobile" src="../images/gogoro-gostation/img-gogoro-gostation-proj1-3_m.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Integration
+            </div>
+            <div class="work-content">
+                I consolidated the three most commonly used layouts from the current various pages, <b>namely "fixed spacing", "button fixed bottom" and "button fixed center".</b> The layout can then be selected based on the amount of content. In addition to Chinese and English languages, I also considered the reading order and layout of other languages.
+                <br/><br/>
+                As to fonts, in addition to the Gogoro brand fonts, other languages ​​use the Noto Sans series with modular layouts to extend all required pages.
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-gostation/img-gogoro-gostation-proj1-4.png" alt="">
+        <div class="line"></div>
+        <img class="work-img slidein-object shadow" src="../images/gogoro-gostation/img-gogoro-gostation-proj2-1.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                <div class="caption-step">Project 2</div>
+                Welcome Revamp
+            </div>
+            <div class="work-content">
+                When swapping batteries, Hello Charlie is a welcome page that provides a very good user experience. However, it is easy to see that <b>the space for "Charlie" on the right side of this page is very limited.</b> If the user's name is longer, the screen will be crowded and unbalanced. Besides, Gogoro planned to support more languages in the future, so the current layout needs to be adjusted in a more flexible direction.
+                <br/><br/>
+                The current swapping animation will be slightly different depending on the number of batteries in the electric scooter. Let’s take a look at the difference between 1 battery and 2 batteries.
+            </div>
+        </div>
+        <video class="work-img shadow" src="../images/gogoro-gostation/img-gogoro-gostation-swapping1.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="../images/gogoro-gostation/img-gogoro-gostation-swapping1.mp4">
+        </video>
+        <video class="work-img shadow" src="../images/gogoro-gostation/img-gogoro-gostation-swapping2.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="../images/gogoro-gostation/img-gogoro-gostation-swapping2.mp4">
+        </video>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Challenge
+            </div>
+            <div class="work-content">
+                Since <b>the battery swapping process is all connected by animation videos, Hello Charlie is also a part of the process</b>, and the animation scenarios of <b>single battery and double battery</b> must be considered together.
+            </div>
+        </div>
+        <video class="work-img" src="../images/gogoro-gostation/img-gogoro-gostation-swapping-prototype.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="../images/gogoro-gostation/img-gogoro-gostation-swapping-prototype.mp4">
+        </video>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Revamp Concept
+            </div>
+            <div class="work-content">
+                In the animations of single and double batteries, you can find that after the battery drops to the middle and displays Hello Charlie, it will <b>"move to the left" and then shows the battery usage calculation.</b> Therefore, we can use the space freed up on the right after moving left.
+            </div>
+        </div>
+        <video class="work-img shadow" src="../images/gogoro-gostation/img-gogoro-gostation-swapping-revamp.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="../images/gogoro-gostation/img-gogoro-gostation-swapping-revamp.mp4">
+        </video>
+        <img class="work-img slidein-object shadow" src="../images/gogoro-gostation/img-gogoro-gostation-proj2-2.png" alt="">
+        <div class="line"></div>
+        <img class="work-img slidein-object shadow" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-1.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                <div class="caption-step">Project 3</div>
+                Battery Issue Reporting
+            </div>
+            <div class="work-content">
+                In the past, <b>GoStation did not have a proper problem reporting mechanism.</b> As a result, users had to call customer service when encountering battery abnormal issues, such as a broken battery handle. <b>The user experience in abnormal situations was very unfriendly.</b> In response to this situation, we began to plan a battery reporting mechanism and GoStation environmental report mechanism.
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Challenge
+            </div>
+            <div class="work-content">
+                Although the advantage of the problem reporting mechanism is that it can reduce customer-service call volume, leave resources to more urgent users, and also reduce the cost of customer service. However, <b>once there is a lack of human verification, false reports become a risk.</b> Therefore, <b>how to provide a friendly feedback experience while reducing false report is a big challenge.</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-2.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Identification
+            </div>
+            <div class="work-content">
+                There are many ways to reduce false report. <b>After internal discussions, the decision was made to take "identity authentication" as the primary consideration.</b> In other words, whether battery abnormal report or GoStation environment report, the user's identity must be verified before proceeding.
+                <br/><br/>
+                Considering that <b>system can identify users after they insert the battery into GoStation, we plan the trigger point of the "report mechanism" in the battery swap process.</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-ia1.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Assumption
+            </div>
+            <div class="work-content">
+                In order not to affect normal swapping experience, <b>we plan the trigger point of report mechanism to be within 15 seconds after the completion of the battery swap, and boldly assumed that the user "will push back the battery into GoStation when receiving an abnormal one"</b>
+                <br/><br/>
+                Besides abnormal battery, we also need to plan <b>the reporting process for the GoStation environment.</b> For the consideration of identity authentication, we planned the same triggering point after internal discussions.
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-ia2.png" alt="">
+        <img class="work-img slidein-object shadow" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-3.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Suspicion
+            </div>
+            <div class="work-content">
+                <b>From the perspective of user experience, it is difficult to understand the reason for raising identity authentication to the highest standard in order to reduce false report.</b> However, from the company's perspective, after an abnormal battery is reported, the system will not only lock the battery, but also notify operation team to verify and recycle it. This means that the available batteries will decrease and the company's costs will increase.
+                <br/><br/>
+                Although the original design intention was to reduce the number of customer service calls, <b>before the function was launched, no one could guarantee that the cost of false report would be less than the resource cost of customer service.</b>
+                <br/><br/>
+                However, there are many concerns about the reporting process, such as:
+                <ul class="bulletpoint">
+                    <li>How do users know there is a report mechanism in the first place?</li>
+                    <li>Users can only report the received battery? How about other batteries?</li>
+                    <li>Is the trigger point for abnormal battery report too obscure? Will it be affected by the trigger point of GoStation environmental report?</li>
+                    <li>Why users have to swap battery to trigger the GoStation environmental report?</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Usability Testing
+            </div>
+            <div class="work-content">
+                After discussing with the PM, we all agree that these doubts may affect the effectiveness of reporting, so we arranged usability testing to verify. The main testing goals are as follows:
+                <ul class="bulletpoint">
+                    <li>Can users intuitively figure out how to trigger the reporting process?</li>
+                    <li>Can the reporting process be successfully completed?</li>
+                </ul>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-5.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Persona
+            </div>
+            <div class="work-content">
+                When we select internal testers, our only consideration is that they must be Gogoro scooter owners, so that we can <b>simulate the actual battery swapping situation.</b>
+                <br/><br/>
+                In order to consider reality, <b>we distinguish two groups of testers based on whether they have read the "official announcement content".</b> After all, users might try new functions after they hearing about them, plus, the trigger point of battery report is relatively obscure. In this case, <b>whether the users have read the official news may affect the actual operating experience.</b> 
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Scenarios
+            </div>
+            <div class="work-content">
+                The test scenario mainly allows users to simulate the daily battery swapping process, we have set the abnormal conditions (as shown below). <b>It is difficult to simulate natural situations in a dirty GoStation. After all, everyone has different definitions of dirty, so we briefed testers verbally.</b>
+                <ul class="bulletpoint">
+                    <li>Abnormal 1: Encounter a battery with broken handle after receiving batteries.</li>
+                    <li>Abnormal 2: Feel the GoStation is very dirty and want to report it.</li>
+                </ul>
+            </div>
+        </div>
+        <img class="work-img slidein-object desktop" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-6.png" alt="">
+        <img class="work-img slidein-object mobile" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-6_m.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Testing
+            </div>
+            <div class="work-content">
+                We recruited 12 Gogoro internal testers and divide them into two groups. One person was absent for some reason during the actual test.
+                <br/><br/>
+                Detailed tasks are planned based on abnormal situations. <b>Task scores are calculated based on completion within the expected time. Detours or signs of frustration reduced the score.</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow desktop" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-7.png" alt="">
+        <img class="work-img slidein-object shadow mobile" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-7_m.png" alt="">
+        <img class="work-img slidein-object shadow desktop" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-7-2.png" alt="">
+        <img class="work-img slidein-object shadow mobile" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-7-2_m.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Result
+            </div>
+            <div class="work-content">
+                <b>Abnormal Battery Report</b><br/>
+                After receiving abnormal battery, 5 people intuitively push back to the GoStation. The other 5 were drawn into other flows and went to other processes. 1 person gave up and wanted to call customer service. <b>Even after entering the report process, most choose to "swapping it again" to get the battery quickly</b>, but no matter what, <b>as long as they can consciously push back to the GoStation, 10 people will eventually get a new battery.</b>
+                <br/><br/>
+                <b>GoStation Environmental Report</b><br/>
+                Five people were able to discover "GoStation Report Button" during the swapping process. The other 4 people <b>needed to be clearly guided to perform the swapping process first</b>, and the other 2 gave up reporting.
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Insights
+            </div>
+            <div class="work-content">
+                After the test, in addition to verifying some of the original doubts, we also found that we ignored very important user behavior patterns when designing the process. The following are the key insights observed after the test:
+                <ul class="bulletpoint">
+                    <li>Even testers who had read the official announcement, it was still not helpful for actual operation, because they won't take it seriously before swapping batteries.</li>
+                    <li>It was reasonable for the bold assumption that "when receiving an abnormal battery, users will intuitively push the battery back." The test subjects all had this operating tendency.</li>
+                    <li>Even if some users want to push back the abnormal battery, they will be unconsciously attracted to click the "GoStation Environmental Report" button when they see it, resulting in false report.</li>
+                    <li>Most people tend to make sure that they have received a normal battery before considering reporting the abnormal one.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Summary
+            </div>
+            <div class="work-content">
+                As the initial test target, it was learned during the test that <b>more than 70% of the subjects tended to push back the abnormal battery</b>, so that they could enter the abnormal battery report process and finally get a new battery. <b>Compared to the original situation that users could only call customer and wait, the testing result is already a significant improvement.</b>
+                <br/><br/>
+                Although we have observed that most users <b>care about ensuring that they get normal batteries</b> and may not want to help report abnormal batteries, the result is still positive for us, at least users can receive a new battery without waiting.
+                <b class="goal">Abnormal report can indeed effectively reduce customer service burden. Although human nature may not necessarily assist in reporting, it is an acceptable result.</b>
+            </div>
+        </div>
+        <video class="work-img" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-testing.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="../images/gogoro-gostation/img-gogoro-gostation-proj3-testing.mp4">
+        </video>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                But...
+            </div>
+            <div class="work-content">
+                <b>The misleading of GoStation report that we were most worried about at the beginning did occur</b>, and the probability is not low, and it does affect the entry point for battery abnormal report. The misleading of "GoStation Environmental Report" is the problem of information architecture and process planning. <b>After we shared the test results to internal members, they no longer insisted on identity authentication for GoStation report, and instead arrange this process under the support service structure.</b>
+            </div>
+        </div>
+        <video class="work-img" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-final.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="../images/gogoro-gostation/img-gogoro-gostation-proj3-final.mp4">
+        </video>
+    </div>
+    <img class="work-img slidein-object" src="../images/gogoro-gostation/img-gogoro-gostation-proj3-8.png" alt="">
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    This was the first time I had designed a user interface other than a website or app. At the beginning, I started by thinking in the concept of design system to help optimizing development efficiency and reduces maintenance costs.
+                    <br/><br/>
+                    However, when planning abnormal report and arranging usability testing, I deeply felt the importance of <b>how the user's operating habits and mental models affect this screen.</b> These experiences let me know <b>don't rely too much on what I believe in when designing interfaces. Appropriate observation and research on habits and behaviors is still necessary.</b>
+                    <br/><br/>
+                    This experience of changing the team's thinking through usability testing also taught me the value of the testing and how to find consensus when facing cooperation differences later.
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-gogoro-buildascooter.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">Gogoro - Build Your Scooter Optimization</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="../images/gogoro-buildascooter/img-gogoro-buildascooter-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

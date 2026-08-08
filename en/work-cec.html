@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="../work-cec.html">Ch</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../work-cec.html">Ch</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="../images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">CEC Cloud Manage System</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="../images/cec/img-cec-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                CEC is a large construction company, started this project in order to improve the inconvenience of filling out paper forms on site, and
+                <b>CEC hoped the engineers can fill the forms through an app to solve the problems like papers that are hard to carry and organize.</b>
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        UIUX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        11 months
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 3 Designers, 1 SA, 4 Developers
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                Since this project started from 0 to 1, and hopes to replace the old process through web pages and apps. In addition, the users are from 30 to 60 years old, CEC is also very curious about how we will design it.
+                <br/><br/>
+                How to reduce the difficulty for users to get started and reduce the pain period of converting paper to App is a big challenge for us. In addition, this system includes front-end, back-end and app, so how to maintain the consistency between platforms costs us lots of time to discuss.
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/cec/img-cec-research.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Research Plan</div>
+            <div class="work-content">
+                We arranged 9 user interviews and visited 4 construction sites, hoping to do qualitative research to understand 
+                <b>"the needs and problems of existing process to users", "the opportunities and possibilities of E-services", "how to improve efficiency and improve project quality at the same time"</b>
+                <br/><br/>
+                The interview process first conducts an in-depth interview with the relevant personnel for 40-60 minutes, and then asks the person to lead us to the construction site for a practical demonstration.
+                <br/><br/>
+                The whole process arranges 1 main interviewer, 2 recorders and 1 photographer. After the interview, we sorted and classified the role information on the same day. The whole process takes about a month.
+                <br/><br/>
+                In the end, we provided a research report to CEC, point out what we observed and user's pain point. Through this interview, we built a good consensus with the client, which makes our cooperation more smooth afterwards.
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Research Insight</div>
+            <div class="work-content">
+                In the end, we summarized the following key points, and we also added these points to the design, such as the ability to attach photos to each item, share issues, quickly create photo record sheets and photo notes functions, etc.
+                <br/><br/>
+                <b>"Relying on image information"</b>
+                <br/>Photographic records, captions, and reports must be accompanied by photographic evidence.
+                <br/><br/>
+                <b>"Instant and effective communication"</b>
+                <br/>Line communication and on-site inspection and supervision.
+                <br/><br/>
+                <b>"Need to process the paperwork effectively"</b>
+                <br/>Engineers often need to organize photos, forms and upload them to cloud afterwards.
+                <br/><br/>
+                <b>"Improving work process through mobile or other software"</b>
+                <br/>Editing photos, marking, google album and excel management.
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/cec/img-cec-style.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Style Proposal</div>
+            <div class="work-content">
+                Our design strategy is 
+                <b>"In the existing workflow, help users in different roles to improve the efficiency of paperwork, and then willing to use electronic solutions." </b>
+                Since the most important function of this project is "form", except displaying different style elements, we also prepared 2 sets of form creation logic for the style proposal.
+                <br/><br/>
+                The "Rational & Stable" design emphasizes what you see is what you get. Taking the existing operation mode as the starting point, the linear structure layout clearly presents key information and functions to help users get started quickly.
+                <br/>
+                In the design of the form, <b>a simulated paper form</b> is mainly used to achieve the goal of reducing the user's learning cost.
+                <br/><br/>
+                "Agile & Energetic" emphasizes breaking through traditions and focuses on organization of functions and spaces, paying attention to the beauty of the layout, reducing redundant decorations, and developing a design style based on functional layout.
+                <br/>
+                The design of the form is mainly based on the modern <b>card-style block presentation</b>, considering the future flexibility and expandability, and making the desktop and App version consistent.
+                <br/><br/>
+                In the end, the client considered the painful period of user conversion, so they chose the "Rational & Stable" style and form creating logic.
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/cec/img-cec-wireframe.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Wireframe</div>
+            <div class="work-content">
+                UX Designer will discuss with me about the hierarchical structure and how it would be presented on screen, and I am mainly responsible for the UI design of the App, so I will design the screen according to the finalized style and Wireframe.
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow" src="../images/cec/img-cec-empty-status.png" alt="">
+    </div>
+    <section class="final-work cec">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Final Design</div>
+        </h2>
+        <div class="final-work-block size-s">
+            <img class="slidein-object" src="../images/cec/img-cec-form-management.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Form Management</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        For website, we allow users to perform complex operations, such as creating forms. For app, we let users focus on filling and managing forms.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-s align-r">
+            <img class="slidein-object" src="../images/cec/img-cec-form-edit.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Edit Form</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        The website use the form filling method based on what you see is what you get, which reduces the learning cost of many engineers. The design is simplified to the questionnaire version on the App side, and the colours are used to make users feel convenient to manage the progress of form filling.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l">
+            <img class="slidein-object" src="../images/cec/img-cec-issue.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Issue Management</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        CEC hoped to manage internal important issues of the construction sites through this function. To enhance the visibility of urgency, each issue has a deadline, and those that are overdue will be labeled "overdue" and placed at the top of the list. 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l align-r">
+            <img class="slidein-object" src="../images/cec/img-cec-sign.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">Sign-off Form</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        In order to meet the government's inspection standards, a sign-off field is also designed on the form. After setting the signature file, the signature and time will be attached to the approval.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    This was the first time I ran user interviews and qualitative research. It was a very interesting experience to be able to go deep into the construction site. 
+                    <b>When designing, I can put myself in the user's position and imagine more about the situation that the user will face.</b>
+                    <br/><br/>
+                    In the early stage of the project, I was the UI Designer, and in the later stage, two other designers supported other projects, so I took over the UI/UX maintenance in the later stage, and also accumulated a lot of UX experience.
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-btox.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">BTOX Online Order System</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="../images/btox/img-btox-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

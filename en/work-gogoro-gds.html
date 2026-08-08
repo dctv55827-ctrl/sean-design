@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    /*if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }*/
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+
+            //slick 圖片輪播
+            $(".slick-arrows").slick({
+                fade: true,
+                infinite: false,
+                dots: true,
+                responsive: [
+                    {
+                    breakpoint: 950,
+                    settings: {
+                        arrows: false
+                    }
+                    }
+                ]
+            });
+            $(".slick-auto").slick({
+                arrows: false,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                pauseOnHover: false,
+                easing: 'ease-out'
+            });
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="../work-gogoro-gds.html">Ch</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="../work-gogoro-gds.html">Ch</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="../images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">Gogoro Scooter Diagnostic System - Optimization</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-gds/img-gogoro-gds-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                <b>Gogoro Diagnostic System, or GDS for short</b>, is a system used by Gogoro maintenance technicians to detect and diagnose whether the electronic control components of their own scooters are normal. <b>Since we often received feedback from scooter owners that repairs and maintenance did not solve the problems initially discovered, the company believed that the problem was caused by the failure of front-line maintenance technicians to follow the SOP for maintenance.</b>
+                <br/><br/>
+                GDS is an application designed in the early stages of Gogoro's founding. <b>The interface style is relatively old</b>, so the initial optimization direction of the project is not only adjust the process to reduce breakpoints, but also improve the readability of the old interface.
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        UI/UX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        3 months
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 Manual Writer, 1 PM, 1 Designer, 1 Developer
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                <b>When I first took over the project, I felt that the company's inference on the behavior of the front-line technicians was a bit biased</b>. After all, the entire maintenance process has many variables, including whether the owner's description is true, the accuracy of the system detection, the validity of the maintenance manual, and the time required for technicians to carry out repairs. Therefore, <b>before starting design adjustments, it is important to clarify the real maintenance pain points to determine the direction of optimization.</b>
+                <br/><br/>
+                And the main goal of this optimization is sub-process integration, so when adjusting the interface, it is necessary to consider the original architecture and components to optimize legibility and usability after integrating the process as much as possible.
+                <b class="goal">It takes more time to clarify the pain points of real maintenance, and the process integration design must also optimize legibility and usability within the original architecture.</b>
+            </div>
+        </div>
+    </div>
+    <section class="info-architecture">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">
+                Original<br/>Information Architecture
+            </div>
+        </h2>
+        <div class="work-block slidein-object">
+            <div class="work-content">
+                Only displays key features related to this project
+            </div>
+        </div>
+        <img class="slidein-object" src="../images/gogoro-gds/img-gogoro-gds-ia.png" alt="">
+    </section>
+    <section class="before-pain-points">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Pain Points</div>
+        </h2>
+        <div class="center-block">
+            <!--<div class="work-img loop-assets slidein-object">
+                <img class="mockup-reveal reveal-in" src="../images/gogoro-gds/img-gogoro-gds-painpoints1.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-painpoints2.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-painpoints3.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-painpoints4.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-painpoints5.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-painpoints6.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-painpoints7.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-painpoints8.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-painpoints9.png" alt="">
+                <img src="../images/gogoro-gds/img-gogoro-gds-painpoints1.png" alt="">
+            </div>-->
+            <div class="work-img slidein-object slick-arrows">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints1.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints2.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints3.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints4.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints5.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints6.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints7.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints8.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-painpoints9.png" alt="">
+            </div>
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    Pain Points
+                </div>
+                <div class="work-content">
+                    The obvious pain points in the interface include the lack of contrast in text size between levels, and the excessive use of default components and gray color leading to poor legibility. Secondly, the steps of the operation process are presented in columns of text. There is too little sense of separation between the steps, and it is easy to accidentally touch the button on the lower right.
+                    <b class="goal">Outdated interface design, unsmooth flow of processes, difficult-to-understand operating components, and poorly readable text and white space are all worthy of proper sorting and optimization.</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="center-block">
+        <img class="work-img slidein-object" src="../images/gogoro-gds/img-gogoro-gds-technician.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">User Interviews</div>
+            <div class="work-content">
+                In order to clarify the actual use situation of front-line technicians during maintenance, the PM and I went to the maintenance store for interviews, <b>hoping to understand the conditions encountered during maintenance and the actual use experience of GDS, especially the operation of "System Diagnostic" and "Smart Diagnostic".</b>
+            </div>
+        </div>
+        <div class="double-img">
+            <img class="work-img slidein-object" src="../images/gogoro-gds/img-gogoro-gds-interview1.png" alt="">
+            <img class="work-img slidein-object" src="../images/gogoro-gds/img-gogoro-gds-interview2.png" alt="">
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Interview Structure</div>
+            <div class="work-content">
+                The interview questionnaire structure mainly started with understanding the daily work process of the maintenance technician, then extended to the SOP of maintenance, followed by issues related to "System Diagnostic" and "Smart Diagnostic", and finally asked about the operating experience and feedback of the GDS.
+                <br/><br/>
+                In total <b>we visited 2 stores and conducted 4 interviews, including managers and senior technicians.</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Interview Insights</div>
+            <div class="work-content">
+                After the interview, we found that technicians’ reliance on GDS during maintenance was lower than we imagined. The following are the key insights observed after the interview:
+                <ul class="bulletpoint">
+                    <li>The company required that as long as scooter owners make an appointment for maintenance, they must use "System Diagnostic".</li>
+                    <li>The entire service averages 30-40 minutes, with a maximum of 90 minutes.</li>
+                    <li>GDS accounts for under 5 minutes of the entire maintenance procedure.</li>
+                    <li>If the scooter owner's problem still cannot be solved after using "System Diagnostic", "Smart Diagnostic" will be used.</li>
+                    <li>The items diagnosed with the highest level will be dealt with first, and other items will be checked if scooter owners mention it, because some are just accidentally triggered and there is not enough time.</li>
+                    <li>Repeat faults were usually not caused by GDS.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Interview Summary</div>
+            <div class="work-content">
+                For technicians, "System Diagnostic" is a requested operating procedure, so it is easy to regard it as a routine due to human nature. However, <b>even if the technician wants to repair it well, the current situation does have many obstacles</b>, such as: the maintenance time is limited, the item level of diagnostic results can easily lead to misjudgment, maintenance information is incomplete, and the expectations of scooter owners need to be met, etc.
+                <br/><br/>
+                Putting aside the company's expectations, we have indeed observed the advantages of process integration. After all, "System Diagnostic" is just one more system detection step than "Smart Diagnostic". The subsequent operations are basically the same, so work efficiency can be improved through process integration. There is a great opportunity to reduce breakpoints.
+                <b class="goal">There is indeed a gap between the actual maintenance status of the technicians and the company's inference. Instead of using an accusatory attitude to control, it is better to cooperate from the perspective of improving work efficiency, so that the technicians can focus on the maintenance process and provide better service quality.</b>
+            </div>
+        </div>
+    </div>
+    <section class="mockup gogoro-gds">
+        <img class="work-img slidein-object" src="../images/gogoro-gds/img-gogoro-gds-mockup1.png" alt="">
+        <div class="center-block">
+            <div class="work-block slidein-object">
+                <div class="sec-tit">Optimization Strategy</div>
+                <div class="work-content">
+                    Based on the company's expectations for process integration and incorporating observations from technician interviews, we hope that the <b>focus of integration will be simplifying the technician's work process</b>, strengthening identification and reminders through interface design, and helping technicians quickly identify important maintenance items and reduce cognitive load by adding prompts at each step.
+                    <b class="goal">In process integration, the starting point is to improve technicians' work efficiency, assist them to find key maintenance items quickly and reduce process breakpoints through hints.</b>
+                </div>
+            </div>
+        </div>
+        <div class="mockup-center darker-bg">
+            <div class="center-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Contrast Enhancement</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    The main colors of old GDS were a little darker, which resulted in poor legibility of the main buttons. Therefore, by increasing the saturation of the main colors, the overall interface was made more comfortable for browsing and recognition.
+                </div>
+            </div>
+            <!--<div class="mockup-img-center loop-assets slidein-object">
+                <img class="mockup-reveal reveal-in" src="../images/gogoro-gds/img-gogoro-gds-mockup2-1.png" alt="">
+                <img class="mockup-reveal" src="../images/gogoro-gds/img-gogoro-gds-mockup2-2.png" alt="">
+                <img src="../images/gogoro-gds/img-gogoro-gds-mockup2-1.png" alt="">
+            </div>-->
+            <div class="mockup-img-center slidein-object slick-auto">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-mockup2-1.png" alt="">
+                <img class="" src="../images/gogoro-gds/img-gogoro-gds-mockup2-2.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-center">
+            <div class="center-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Not just integration</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    Integration for its own sake was not the goal, smooth operation flows, quick identification of important items, and clear information hierarchy all need to be considered.
+                </div>
+            </div>
+            <div class="mockup-img-center loop-assets slidein-object">
+                <img src="../images/gogoro-gds/img-gogoro-gds-mockup3.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-split">
+            <div class="mockup-split-left">
+                <img class="slidein-object" src="../images/gogoro-gds/img-gogoro-gds-mockup4-1.png" alt="">
+            </div>
+            <div class="mockup-split-right">
+                <img class="slidein-object" src="../images/gogoro-gds/img-gogoro-gds-mockup4-2.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-top-left">
+            <div class="mockup-top-left-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Smart diagnostic</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    When executing the troubleshooting process, the project list on the left will highlight the item being resolved.
+                </div>
+            </div>
+            <div class="mockup-img loop-assets slidein-object">
+                <img src="../images/gogoro-gds/img-gogoro-gds-mockup5.png" alt="">
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="../images/gogoro-gds/img-gogoro-gds-scenario1.png" alt="">
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    Fortunately, when the question was raised at the beginning, the PM was able to stand on the same side as the designer and was willing to go to the maintenance store for interviews together. Planning through a better understanding of the technician's maintenance process can reduce a lot of learning costs.
+                    <br/><br/>
+                    The redesign shipped and is in daily use across service stores. I left the company shortly after rollout, so I never had the chance to measure adoption — the feedback I gathered from technicians before leaving was positive.
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-gogoro-gostation.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">Gogoro GoStation - Optimization</div>
+                <p>Product Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="../images/gogoro-gostation/img-gogoro-gostation-cover-full.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

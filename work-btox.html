@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="en/work-btox.html">En</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="en/work-btox.html">En</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">亨泰光學線上訂單系統</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="images/btox/img-btox-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                亨泰光學(BTOX)是垂直整合的 「客製化」眼鏡領導專家，是亞洲第一大隱形眼鏡客製化製造廠 - 亨泰光學，擁有研發、製造、應用三方整合資源。
+                <br/><br/>
+                由於亨泰光學的業務範圍涉及國內及海外市場，過去針對國內及海外個別以兩套訂單系統來管理，而此次專案的目的就是
+                <b>以亨泰光學內部客服人員的訂單整合需求、以及減少業務與醫生端的溝通成本來設計國內、外皆可共同使用的線上訂單系統。</b>
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        DesignLead / UI Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        11 month
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 4 Designers, 1 SA, 5 Developer
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                由於過去國內及國外一直是分開的兩套系統，商業邏輯也不盡相同，亨泰光學內部也透過個別的部門來負責，所以
+                <b>如何以一套系統來整合國內及海外市場，並且要與客戶端溝通因應系統的整合勢必會有些取捨是個極大的難題。</b>
+                <br/><br/>
+                此訂單系統包含了前台與後台，而鏡片商品的資訊因包含鏡片數值所以非常繁雜，如何在介面上清楚地呈現完整資訊並且要符合系統一致性與兼顧RWD也是一大挑戰。
+            </div>
+        </div>
+        -->
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Pain Points</div>
+            <div class="work-content">
+                由於過去國內及海外一直是分開的兩套系統，商業邏輯也不盡相同，亨泰光學內部也透過個別的部門來負責。而目前訂單後台系統風格過於陽春，資訊呈現上也比較不清楚，所以我們整理了以下幾個痛點：
+                <ul class="bulletpoint">
+                    <li>使用兩套系統來管理國內海外市場的訂單，導致內部人員後續統整困難，也需花額外的成本維護</li>
+                    <li>舊有的系統風格導致資訊呈現不清楚，操作流程也比較繁瑣，難以找到對應的功能</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">User Personas</div>
+            <div class="work-content">
+                根據與利害關係人進行的需求訪談，我們統整出了主要的兩個使用角色，一個是後台的主要使用者-客服專員，主要處理前台送來的訂單，另一個是前台的使用者-驗光師，負責處理病患檢測角膜數據後，透過前台來下訂單給亨泰。
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow" src="images/btox/img-btox-persona1-ch.png" alt="">
+        <img class="work-img slidein-object shadow" src="images/btox/img-btox-persona2-ch.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Our Goal</div>
+            <div class="work-content">
+                經由上述需求訪談、痛點分析、與決定使用者角色後，我們意識到國內外整合的重要性，還有整個訂單流程有許多需要優化的部分，所以我們的首要目標為
+                <b class="goal">在整合國內及海外系統邏輯的同時，優化訂單的操作流程，並確保各項功能具備足夠的彈性來滿足各個角色的需求</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Style Proposal</div>
+            <div class="work-content">
+                釐清目標後，我們提供了兩套視覺風格提案：
+                <br/>
+                首先是<b>「專業舒適」</b>，主要目標為強化品牌形象與曝光度。使用簡約的風格與留白空間來增加瀏覽舒適度，在版型設計上採用直角的元素來營造專業、穩重的視覺體驗。
+                <br/>
+                再來是<b>「活潑新穎」</b>，以功能佈局做為設計的依據，重視功能和空間的組織。在版型設計上採用圓角來使整體視覺更加圓滑，並利用鮮明的配色與圖示來營造活潑、新穎的視覺體驗。
+                <br/><br/>
+                而最後客戶希望以「活潑新穎」的版型為主，但配色上希望採用「專業舒適」較沈穩內斂的藍色。
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/btox/img-btox-style.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Wireframe</div>
+            <div class="work-content">
+                確認風格後，UX Designer會依據Funtional Map與需求訪談的結果來繪製線框圖，並與SA確認系統可行性後規劃UI Flow。在這段過程中我們所有設計師也都會共同參與討論與發想，客戶確認後，再交給我們UI Designer來進行後續設計。
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/btox/img-btox-wireframe.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">UI Elements</div>
+        </div>
+        <img class="work-img slidein-object" src="images/btox/img-btox-icon.png" alt="">
+        <img class="work-img slidein-object shadow" src="images/btox/img-btox-empty status.png" alt="">
+    </div>
+    <section class="final-work btox">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Final Design</div>
+        </h2>
+        <div class="final-work-block size-s">
+            <img class="slidein-object" src="images/btox/img-btox-index.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">前台首頁</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        以功能為導向，將使用者常用功能提列在首頁，像是常用商品、待完成訂單、待配鏡片，來提升使用者的操作效率。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-s align-r">
+            <img class="slidein-object" src="images/btox/img-btox-product list.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">商品頁</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        利用去背過的商品圖與陰影來營造科技感，並透過不同顏色標籤來呈現商品特性。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l">
+            <img class="slidein-object" src="images/btox/img-btox-admin.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">後台首頁</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        訂單為亨泰客服人員最需頻繁關注的項目，所以直接將最重要的 4 個訂單狀態提列在首頁，並搭配插圖來提升狀態辨識度，方便使用者操作管理。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l align-r">
+            <img class="slidein-object" src="images/btox/img-btox-login.jpg" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">登入頁</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        左方的輪播區塊除了提升品牌形象，也能當作公告或行銷用途。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    在這個案子中我同時擔任Lead與UI Designer的角色，所以在兼顧品質與讓設計師發揮自己的想法上花了很多心力，最終我們透過密切地溝通與職責導向來讓團隊成員取得共識。
+                    <br/><br/>
+                    而整合國內外系統一直是我們與客戶溝通成本大增的難題，這次的合作並沒有很順利地收斂客戶的需求，有點像是把兩個不同系統放在一個網站而已，所以若日後還有類似的需求，
+                    <b>在專案開始前還是必須先讓客戶了解未來的走向與系統上的限制，並且讓客戶意識到未來擴充性與維護成本的重要性。</b>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-cathay.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">國泰健檢預約平台</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="images/cathay/img-cathay-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    /*if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }*/
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="en/work-gogoro-gostation.html">En</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="en/work-gogoro-gostation.html">En</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">Product Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">Gogoro GoStation - 換電站流程優化</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-gostation/img-gogoro-gostation-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                <b>GoStation 又稱為「電池交換站」或「換電站」</b>，主要提供 Gogoro 車主來使用能源交換服務，除了台灣之外，目前也陸續擴展到其他國家，<b>而換電站介面上的功能與操作是由我做後續的維護及優化。</b>
+                <br/><br/>
+                <b>設計範疇包含資訊結構與操作動線的規劃，也會搭配易用性測試來做基本驗證。</b>介面上的視覺呈現以延續產品一致性的概念來延伸，若有新的 3D 素材需求會再請專業團隊配合輸出。
+                <br/><br/>
+                在這個產品中我負責的項目有：
+                <ul class="bulletpoint">
+                    <li>資訊模板模組化設計</li>
+                    <li>歡迎頁面資訊呈現優化</li>
+                    <li>電池異常問題回報流程設計</li>
+                </ul>
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        Product Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 1 Designer, 2 Developer
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="line"></div>
+        <img class="work-img slidein-object" src="images/gogoro-gostation/img-gogoro-gostation-proj1-1.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                <div class="caption-step">Project 1</div>
+                Modular
+            </div>
+            <div class="work-content">
+                上方右邊藍色區塊是 <b>GoStation 常用的資訊顯示模板</b>，以往 GoStation 的介面設計注重在各語系的視覺平衡，所以即使看起來相似的版型，間距與字體大小都會有些許差異，並沒有模組化的設計，我們透過下圖來看會更清楚差異。
+            </div>
+        </div>
+        <img class="work-img slidein-object desktop" src="images/gogoro-gostation/img-gogoro-gostation-proj1-2.png" alt="">
+        <img class="work-img slidein-object mobile" src="images/gogoro-gostation/img-gogoro-gostation-proj1-2_m.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Challenge
+            </div>
+            <div class="work-content">
+                由上圖可以發現單純語系跟區塊的差異就有這麼多間距的變化，雖然依各自情境判斷都可以理解為什麼會需要「微調」，但若<b>以此為基礎去衍生多語系介面後續維護成本將會非常龐大。</b>
+                <br/><br/>
+                除了間距，<b>不同語言的字型與字體大小、行距等等的整合也需要審慎考量，畢竟這些頁面已經是既有用戶熟悉的樣式。</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object desktop" src="images/gogoro-gostation/img-gogoro-gostation-proj1-3.png" alt="">
+        <img class="work-img slidein-object mobile" src="images/gogoro-gostation/img-gogoro-gostation-proj1-3_m.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Integration
+            </div>
+            <div class="work-content">
+                從已經設計出的畫面中歸納出三個最常使用的版型，分別是<b>固定間距、按鈕置底與按鈕靠中。</b>往後可以依據內容的多寡去決定資訊的呈現方式。除了中、英語系之外，也考量其他語系的閱讀順序與排版。
+                <br/><br/>
+                字型上除了 Gogoro 品牌字型之外，其他語系使用 Noto Sans 系列搭配模組版型去延伸出所有需要的畫面。
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-gostation/img-gogoro-gostation-proj1-4.png" alt="">
+        <div class="line"></div>
+        <img class="work-img slidein-object shadow" src="images/gogoro-gostation/img-gogoro-gostation-proj2-1.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                <div class="caption-step">Project 2</div>
+                Welcome Revamp
+            </div>
+            <div class="work-content">
+                進行換電時，Hello Charlie 是對用戶體驗非常好的歡迎頁面，但此頁面不難看出<b>右方「Charlie」的空間十分有限，若用戶的名稱較長就會使得畫面擁擠且失衡</b>。再加上日後要往多語系發展的情況下，目前的版型就更需要往彈性的方向調整。
+                <br/><br/>
+                我們的換電動畫根據電動車的電池數量不同，會有些微差異，接下來看一下 1 顆跟 2 顆電池的差別。
+            </div>
+        </div>
+        <video class="work-img shadow" src="images/gogoro-gostation/img-gogoro-gostation-swapping1.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="images/gogoro-gostation/img-gogoro-gostation-swapping1.mp4">
+        </video>
+        <video class="work-img shadow" src="images/gogoro-gostation/img-gogoro-gostation-swapping2.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="images/gogoro-gostation/img-gogoro-gostation-swapping2.mp4">
+        </video>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Challenge
+            </div>
+            <div class="work-content">
+                由於<b>換電過程皆是由動畫影片串起，Hello Charlie 也是在過程的一環</b>，並且<b>單顆電池、雙顆電池的動畫情境都要一起考量</b>，要在不更動動畫的框架下去找到名稱合適的呈現方式。
+            </div>
+        </div>
+        <video class="work-img" src="images/gogoro-gostation/img-gogoro-gostation-swapping-prototype.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="images/gogoro-gostation/img-gogoro-gostation-swapping-prototype.mp4">
+        </video>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Revamp Concept
+            </div>
+            <div class="work-content">
+                在單顆、雙顆的動畫中可以發現電池落到中間顯示 Hello Charlie 後，都會<b>「向左位移」再接後續的用量計算</b>，所以就可以<b>利用左移後右方騰出來的空間去規劃名稱顯示的彈性。</b>
+            </div>
+        </div>
+        <video class="work-img shadow" src="images/gogoro-gostation/img-gogoro-gostation-swapping-revamp.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="images/gogoro-gostation/img-gogoro-gostation-swapping-revamp.mp4">
+        </video>
+        <img class="work-img slidein-object shadow" src="images/gogoro-gostation/img-gogoro-gostation-proj2-2.png" alt="">
+        <div class="line"></div>
+        <img class="work-img slidein-object shadow" src="images/gogoro-gostation/img-gogoro-gostation-proj3-1.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                <div class="caption-step">Project 3</div>
+                Online Issue Report
+            </div>
+            <div class="work-content">
+                GoStation 在<b>過往並沒有妥善的問題回報機制，導致用戶遇到電池異常狀況時就只能打給客服</b>，例如：電池把手斷裂，<b>異常情境時的使用者體驗十分不友善。</b>因應此情境我們開始規劃專屬的電池回報機制與換電站環境回報機制。
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Challenge
+            </div>
+            <div class="work-content">
+                雖然問題回報機制的優點是可以降低客服的進線率，把資源留給更急迫的用戶，也降低客服的成本。<b>但一旦缺少人為的驗證，「誤報」的問題就會浮現</b>，所以<b>如何在提供友善的回報體驗下，又能減少失誤或是蓄意的回報是一大考驗。</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow" src="images/gogoro-gostation/img-gogoro-gostation-proj3-2.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Identification
+            </div>
+            <div class="work-content">
+                減少誤報的方式有很多，<b>內部討論後決議是以「身份認證」為首要考量</b>，也就是說，不管是電池異常回報還是換電站環境回報，都必須取得用戶身份才能進行。
+                <br/><br/>
+                考慮到用戶<b>將電池放入換電站後就能取得身份資訊，所以我們將「回報機制」的觸發點規劃在換電的流程中。</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-gostation/img-gogoro-gostation-proj3-ia1.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Assumption
+            </div>
+            <div class="work-content">
+                為了不影響正常換電的使用者，我們將<b>觸發的回報機制的時間點設計在換電結束後的 15 秒內，並大膽假設用戶換電後「收到異常電池時會將該電池再次壓回換電站。」</b>
+                <br/><br/>
+                除了電池異常，我們還需要規劃<b>換電站環境的回報流程</b>，而同樣為了身份認證的考量，內部討論後最終還是規劃在同一個觸發時機。
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-gostation/img-gogoro-gostation-proj3-ia2.png" alt="">
+        <img class="work-img slidein-object shadow" src="images/gogoro-gostation/img-gogoro-gostation-proj3-3.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Suspicion
+            </div>
+            <div class="work-content">
+                <b>以使用者體驗的角度，很難理解為了減少誤報，而把身份認證拉到最高標準的原因是什麼。</b>但以公司的角度，回報異常電池後系統除了會鎖定該電池，也會通知相關單位前往查證與回收，也就是電池的供應數量下降、公司派遣成本提高。
+                <br/><br/>
+                雖然當初設計初衷是減少客服的進線量，<b>但功能尚未推出之前，沒有人敢保證誤報所產生的成本會不會小於客服的資源成本。</b>
+                <br/><br/>
+                但目前的問題回報流程其實有諸多疑慮，例如：
+                <ul class="bulletpoint">
+                    <li>用戶一開始要怎麼知道有回報機制？</li>
+                    <li>用戶只能回報退出來的電池？ 其他電池不能回報嗎？</li>
+                    <li>回報異常電池的觸發點會不會太隱晦？ 會不會被「回報站點問題」的按鈕給影響？</li>
+                    <li>為什麼回報站點問題，要先進行換電才能觸發？</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Usability Testing
+            </div>
+            <div class="work-content">
+                與 PM 討論後，一致認為這些疑慮可能會影響問題回報的效益，所以我們安排易用性測試來進行驗證，主要測試的目標如下：
+                <ul class="bulletpoint">
+                    <li>是否能直覺地意識到如何觸發問題回報流程？</li>
+                    <li>是否能順利完成問題回報流程？</li>
+                </ul>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-gostation/img-gogoro-gostation-proj3-5.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Persona
+            </div>
+            <div class="work-content">
+                我們在選擇內部測試人員時，唯一的考量只有必須是 Gogoro 車主，這樣才能<b>模擬實際的換電情境。</b>
+                <br/><br/>
+                而為了考量真實性，<b>我們依照是否閱讀過「官方宣告內容」來區分兩組測試者</b>，畢竟實際上用戶可能會先接收到新功能的消息才去嘗試，再加上電池異常回報觸發點較隱晦的情境下，<b>是否有閱讀官方宣導可能會影響實際的操作體驗。</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Scenarios
+            </div>
+            <div class="work-content">
+                測試情境主要是讓使用者模擬日常的換電流程，搭配我們設定好的異常狀況(如下)，而<b>換電站髒亂比較難模擬自然情境，畢竟每個人對髒亂的定義不同，所以這個情境我們是用口頭引導的方式來處理。</b>
+                <ul class="bulletpoint">
+                    <li>異常一：換電後遇到把手斷裂的電池</li>
+                    <li>異常二：覺得換電站十分髒亂，必須回報</li>
+                </ul>
+            </div>
+        </div>
+        <img class="work-img slidein-object desktop" src="images/gogoro-gostation/img-gogoro-gostation-proj3-6.png" alt="">
+        <img class="work-img slidein-object mobile" src="images/gogoro-gostation/img-gogoro-gostation-proj3-6_m.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Testing
+            </div>
+            <div class="work-content">
+                我們預計選擇 12 位 Gogoro 內部測試人員，再區分為兩組，實際測試時有 1 位因故缺席。
+                <br/><br/>
+                依據異常情境規劃細部任務，任務比分的計算<b>以在預期時間內完成算是得分，如果有繞路或負面情緒會斟酌給分。</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow desktop" src="images/gogoro-gostation/img-gogoro-gostation-proj3-7.png" alt="">
+        <img class="work-img slidein-object shadow mobile" src="images/gogoro-gostation/img-gogoro-gostation-proj3-7_m.png" alt="">
+        <img class="work-img slidein-object shadow desktop" src="images/gogoro-gostation/img-gogoro-gostation-proj3-7-2.png" alt="">
+        <img class="work-img slidein-object shadow mobile" src="images/gogoro-gostation/img-gogoro-gostation-proj3-7-2_m.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Result
+            </div>
+            <div class="work-content">
+                <b>電池異常回報</b><br/>
+                有 5 位發現退出異常電池後，會直覺性壓回換電站，另外 5 位繞路之後走到別的流程，有 1 位直接放棄回報想打客服。<b>即使進入了回報流程，大多都選擇「再換一次」來快速拿到電池</b>，但不管如何<b>只要能意識到壓回去換電站，最終有 10 位皆能拿到新電池。</b>
+                <br/><br/>
+                <b>換電站點髒亂回報</b><br/>
+                有 5 人可以在換電流程中發現「回報站點問題」，其他 4 人<b>需要明確引導先進行換電流程</b>，其他兩人則是放棄回報。
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Insights
+            </div>
+            <div class="work-content">
+                測試後除了驗證當初的部分疑慮之外，也額外發現我們設計流程時忽略掉很重要的用戶行為模式，以下是測試後觀察到的重點：
+                <ul class="bulletpoint">
+                    <li>即使有閱讀官方宣告，對於實際操作時還是沒有幫助，因為沒有臨場感，不會特別去記。</li>
+                    <li>當初大膽假設「遇到異常電池會直覺得把電池壓回去」是合理的，受測者都有這樣的操作傾向。</li>
+                    <li>即使部分用戶想壓回異常電池，但看到「回報站點問題」的按鈕會不自覺被吸引而點擊，導致誤報產生。</li>
+                    <li>即使受測者遇到異常電池，大多人傾向先確保自己換到正常電池後，才會考慮回報問題。</li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                Summary
+            </div>
+            <div class="work-content">
+                以一開始的測試目標來說，在測試中得知<b>有超過 7 成的受測者傾向壓回異常電池</b>，這樣就能進入異常電池的回報流程，也就一定能拿到新電池，<b>這對於原本只能打客服乾等的情況來說，已經是顯著的改善。</b>
+                <br/><br/>
+                雖然我們觀察到用戶大多在乎的是<b>確保自己拿到正常的電池</b>，也許不會想協助回報異常電池，不過這樣也是我們樂見的結果，至少不會讓用戶產生負面情緒。
+                <b class="goal">異常回報確實能有效改善客服負擔，雖然人性上不一定會協助回報，不過是可接受的結果。</b>
+            </div>
+        </div>
+        <video class="work-img" src="images/gogoro-gostation/img-gogoro-gostation-proj3-testing.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="images/gogoro-gostation/img-gogoro-gostation-proj3-testing.mp4">
+        </video>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">
+                But...
+            </div>
+            <div class="work-content">
+                我們一開始最擔心的<b>站點回報問題誤導問題確實發生了，而且機率不低，也的確影響到電池異常回報的進入點</b>，而「回報站點問題」的誤導所衍生的是資訊架構與流程規劃的問題，<b>內部得知測試結果後，也不再堅持回報站點必須通過身份認證，轉而將此流程規劃在支援服務的架構下。</b>
+            </div>
+        </div>
+        <video class="work-img" src="images/gogoro-gostation/img-gogoro-gostation-proj3-final.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+            <source data-src="images/gogoro-gostation/img-gogoro-gostation-proj3-final.mp4">
+        </video>
+    </div>
+    <img class="work-img slidein-object" src="images/gogoro-gostation/img-gogoro-gostation-proj3-8.png" alt="">
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    這是第一次設計規劃網站或App以外的使用者介面，一開始先以設計系統的概念來思考，去協助規劃了優化開發效率及降低維護成本的設計。
+                    <br/><br/>
+                    但在規劃異常回報而進行易用性測試時，會深刻感受到<b>使用者的操作習慣與心智模型如何影響這個螢幕的重要性</b>，這些經驗讓我知道在做介面設計時，<b>不要太依賴自己相信的習慣與行為，適度的觀察與研究還是必要的。</b>
+                    <br/><br/>
+                    這次透過易用性測試去改變團隊想法的經驗，也讓我知道這些測試的價值與之後面對合作歧見時，可以用什麼方式來找到共識。
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-gogoro-buildascooter.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">Gogoro - 打造愛車優化提案</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="images/gogoro-buildascooter/img-gogoro-buildascooter-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

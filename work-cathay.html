@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="en/work-cathay.html">En</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="en/work-cathay.html">En</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">國泰健檢預約平台</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="images/cathay/img-cathay-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                國泰健康管理中心主打全方位照護、優質安全的檢查環境、完善的設備與專業的醫療團隊，他們希望建立一個預約平台，能帶給使用者溫暖並且減緩操作時的緊張感。
+                <br/><br/>
+                因國泰原本希望先設計App系統再與網站串接，所以我們先進行了App的設計提案，後續確認接手後才發現國泰已有粗略的Wireframe規劃並且改為先設計網站，希望我們接續完成細部的UI Flow與GUI設計。
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        UX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        4 month
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 2 Designers, 1 SA, 3 Developer
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                由於此專案的後端串接來自國泰健康管理中心的舊系統，並且由國泰內部程式人員設計的中臺來提供Api，所以認真來說我們屬於丙方，因無法直接面對需求方，導致溝通上有極大的困難，並且需因應舊系統與中臺的限制而影響UX設計。
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/cathay/img-cathay-style.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Style Proposal</div>
+            <div class="work-content">
+                先前在App提案時的風格為「植物療癒風」，正式開案後除了延續植物插畫，我們的UI設計師也提供了另一個風格來讓國泰選擇。
+                <br/><br/>
+                「安心舒適」以讓人放鬆的綠色植物為主，藉此降低使用者對於健檢的緊張感，並讓使用者在體驗上感到安心。
+                <br/><br/>
+                「幾何簡約」以幾何圖形作為排版基礎，達到不同的視覺動線及閱讀體驗，並搭配漸層色製造活潑的變化感。
+                <br/><br/>
+                而風格提案的過程來回了幾次，最後客戶選擇以「安心舒適」的版本為主，但去掉植物插畫，改為以簡單的圓形做點綴即可。
+            </div>
+        </div>
+        <iframe class="work-iframe slidein-object" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fn0iH5mZRhB0dtSlOUlDFPG%2FSean_Website%3Fnode-id%3D961%253A464%26scaling%3Dscale-down%26page-id%3D958%253A453%26starting-point-node-id%3D961%253A464" allowfullscreen></iframe>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">UI Flow</div>
+            <div class="work-content">
+                由於開案時國泰已提供粗略的Wireframe規劃，但這個規劃只有正向流程，所以我主要負責在原規劃下，先以流程正確性與體驗順暢性來跟客戶討論。
+                <br/><br/>
+                再配合中臺規劃的程式邏輯，調整Flow因應程式判斷而產生的畫面，最終與SA討論後補上錯誤情境會產生的畫面來完成這次的UI Flow。
+            </div>
+        </div>
+    </div>
+    <img class="work-img slidein-object" src="images/cathay/img-cathay-wireframe-full.png" alt="">
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    健康檢查預約需考量的情境繁多，所以我在繪製UI Flow時
+                    <b>加入Flow Chart的菱形標記來統整不同狀況，確保所有情境都有考量到。</b>
+                    <br/><br/>
+                    雖然處於丙方的角色，且流程規劃必須受限於中臺程式設計，但也因為如此可以
+                    <b>更深入的去理解程式限制對於流程的影響，讓我跟開發人員討論時可以更設身處地的去溝通。</b>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-dksh.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">Dr.Talk 線上醫學課程平台</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="images/dksh/img-dksh-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

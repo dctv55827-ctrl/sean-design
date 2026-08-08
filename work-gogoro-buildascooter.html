@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    /*if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }*/
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="en/work-gogoro-buildascooter.html">En</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="en/work-gogoro-buildascooter.html">En</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">Gogoro - 打造愛車優化提案</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                <b>打造愛車</b>是 Gogoro 官網能與用戶互動的主要功能之一，可以讓使用者在線上模擬自己有興趣的車款與配件，由於經年累月下來因應商業需求的調整，此功能已經沒辦法達到當初預期的目的，所以在<b>加入 Gogoro 後首先被指派的任務是利用手邊現有的資源來提出打造愛車的改版提案。</b>
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        UI/UX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        3 weeks
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                Gogoro 為了避免商業機密洩漏，所以在車輛命名與分類方式較為隱晦，一開始花了較多時間去理解。而除了操作介面的優化之外，主管也期待可以看到更多優化的動機，例如流量數據、各部門影響、銷售利益等等。
+                <b class="goal">在兼顧商業端考量下，盡可能地協助使用者理解車輛差異，並且獨自整理出介面設計以外的各項佐證資料是一大考驗</b>
+            </div>
+        </div>
+    </div>
+    <section class="before-pain-points">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Pain Points</div>
+        </h2>
+        <div class="center-block">
+            <div class="double-img">
+                <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-pp1-1.png" alt="">
+                <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-pp1-2.png" alt="">
+            </div>
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    <div class="caption-step">Step1</div>
+                    Select Scooter
+                </div>
+                <div class="work-content">
+                    打造愛車第 1 個步驟是選擇車輛，一般選擇車款時最重要的除了外型之外，再來就是明確的分類與價格。由上方可以看到<b>不同的車輛比例、重複的車款、莫名的橫幅。</b>這些都會讓使用者在選擇車輛時受到影響，無法綜觀地去挑選車輛。
+                    <b class="goal">重複與令人困惑的資訊呈現，會影響用戶在車輛挑選的判斷。</b>
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-pp2.png" alt="">
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    <div class="caption-step">Step2</div>
+                    Choose Color
+                </div>
+                <div class="work-content">
+                    第 2 步驟為選擇車色，右上方明顯的金額很容易聯想成車款金額，但其實是「政府補助金額」，詢問後原先的確是車輛金額，但因應商業考量改成補助金額。
+                    <br/><br/>
+                    下方的車色選擇部分還包含了切換其他車款的功能，雖然這樣切換車款比較方便但也限制了「選擇車色」可發揮的空間。
+                    <b class="goal">不相關的資訊與重複的功能，讓簡單的步驟變得複雜</b>
+                </div>
+            </div>
+            <div class="double-img">
+                <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-pp3-1.png" alt="">
+                <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-pp3-2.png" alt="">
+            </div>
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    <div class="caption-step">Step3</div>
+                    Accessories
+                </div>
+                <div class="work-content">
+                    在進到「配件選擇」前，必須在選擇車色時滑動到下方才能看到「下一步」的按鈕，並且是以淺灰色的樣式來呈現，十分容易讓使用者誤以為要切換頁籤或是被引導去點擊右上方的優惠試算。
+                    <br/><br/>
+                    在選擇配件時，由於某些配件有前置加購的限制，例如：先買 A 才能買 B ，但系統只透過文字來提示，使用者關掉提示後須憑文字記憶瀏覽找到後才能選擇原先想要的配件，整個選擇流程十分不順暢。
+                    <b class="goal">步驟切換動線不佳，系統提示不夠友善，操作順暢度很差</b>
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-pp4.png" alt="">
+            <div class="work-block slidein-object">
+                <div class="sec-tit">
+                    <div class="caption-step">Step4</div>
+                    Submit Quotation
+                </div>
+                <div class="work-content">
+                    最後一步是「優惠試算」，點擊按鈕後會彈出視窗顯示複雜的政府補助表格與個人資訊欄位，作為「打造愛車」的最後一個步驟這樣的規劃與使用者的期待落差可以說是非常之大。
+                    <br/><br/>
+                    就算因應商業考量無法得到總價，但如此複雜的表單填寫也會令人打退堂鼓，對於用戶端與企業端都無法受益。
+                    <b class="goal">流程完成成本過高，與用戶初始期待不一致，轉換率很低</b>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div class="center-block">
+        <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-ga.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Google Analytics</div>
+            <div class="work-content">
+                為了瞭解目前打造愛車的完成狀況，特別請前端同仁提供當初近兩個月的 GA 數據，可以看出<b>平均轉換率是連 1％ 都不到，就連自然搜尋的轉換率也非常低，所以流程上勢必有極大的問題。</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-store.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Stakeholder Interviews</div>
+            <div class="work-content">
+                除了介面上的痛點，我也必須找尋是否有其他優化的動機，所以我選擇到 Gogoro 門市做訪談，從第一線銷售人員與顧客的互動來切入，看看在整個來往的過程中<b>是否有用到官網的功能來協助解說，進一步延伸到「打造愛車」對於門市端的影響與顧客的看法。</b>
+            </div>
+        </div>
+        <div class="double-img">
+            <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-interview1.png" alt="">
+            <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-interview2.png" alt="">
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">How</div>
+            <div class="work-content">
+                訪鋼結構主要以<b>了解門市端業務一天的流程與跟顧客的互動為主，再衍生詢問官網與打造愛車相關的議題。</b>訪談時皆由我獨自進行，總共造訪 <b>4 間門市，進行 6 場訪談，包含店長與資深業務。</b>
+                <br/><br/>
+                以下由 4 個重點切入，分別是<b>釐清需求、輔助工具、共通痛點、訪談觀察。</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-interview3.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Needs</div>
+            <div class="work-content">
+                每個門市的業務在探索顧客需求時發問的問題都大同小異，只是順序上的不同，例如是通勤還是休閒用途、大概都騎多遠、偏好的車身重量、是否騎過汽油機車，當然還有最重要的預算考量等等。
+                <b class="goal">了解顧客的喜好與需求，是可以系統化的</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-interview4.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Assistant Tools</div>
+            <div class="work-content">
+                訪談過程中，發現除了車輛相關問題之外，門市端也需要協助顧客排除其他疑慮，例如配件樣式、換電是否方便、跟汽油機車的差異等等，也有部分疑慮是來自官網的資訊不夠清楚。
+                <br/><br/>
+                所以官網的各項功能是業務常常會輔助使用的工具，甚至有資深店長還會自製簡報來說明。
+                <b class="goal">官網的功能如果設計妥當，對於門市端的溝通助益良多</b>
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-interview5.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Common Issues</div>
+            <div class="work-content">
+                門市端業務對於官網的功能的回饋，大多都偏向資訊與實際需求有落差。像是無法了解配件的實際使用效果、不清楚如何找到適合的車款、規格比較表使用上效率不佳等等。
+                <b class="goal">官網的功能對門市端的影響不容小覷，可以是協助溝通的工具，也可能是加重溝通澄清的業務量</b>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Summary</div>
+            <div class="work-content">
+                從一開始的釐清需求、輔助工具的習慣與依賴性，和產品設計不佳所造成的痛點，可以看出<b>優化「打造愛車」能帶來的正面效益不僅是使用者的趣味體驗而已，還能減輕門市端的溝通成本，提升銷售表現</b>，若能結合訂單系統，甚至可以提升整體作業效率。
+                <b class="goal">業務在接待顧客時就好比線下版的打造愛車，所以線上的打造愛車如果能發揮價值，勢必能減少門市負擔，提升購買意願</b>
+            </div>
+        </div>
+    </div>
+    <section class="mockup gogoro-buildascooter">
+        <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup1.png" alt="">
+        <div class="center-block">
+            <div class="work-block slidein-object">
+                <div class="sec-tit">Optimization Strategy</div>
+                <div class="work-content">
+                    根據上方的痛點分析與訪談觀察，我們將改版著重在讓使用者接觸打造愛車時，除了保有輕鬆有趣的心態，也能協助使用者找到適合的車款，在過程中產生興趣，最後根據需求提供彈性目標，提升轉換率。
+                    <b class="goal">帶著好奇與玩樂的心情接觸，在打造的過程中產生興趣，最後提供能創造雙贏的選擇</b>
+                </div>
+            </div>
+        </div>
+        <div class="mockup-center darker-bg">
+            <div class="center-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Select scooter and color</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    每個車款已經有專屬的形象介紹頁，所以在打造愛車時，圖片不再是唯一重點，
+                    將車輛的性能與規格轉化成使用者方便理解，並進一步篩選的方法更加重要。
+                </div>
+            </div>
+            <div class="mockup-img-center loop-assets slidein-object">
+                <img class="mockup-pop pop-up" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup2-1.png" alt="">
+                <img class="mockup-pop" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup2-2.png" alt="">
+                <img src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup2.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-left">
+            <div class="mockup-left-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Can't decide?</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    還是無法決定嗎？ 沒關係，我們提供智慧推薦！
+                    告訴我們你的偏好，由我們推薦車款給您。
+                </div>
+            </div>
+            <div class="mockup-img-right loop-assets slidein-object">
+                <img class="mockup-reveal reveal-in" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup3.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup3-1.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup3-2.png" alt="">
+                <img src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup3.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-full">
+            <div class="mockup-full-text bottom-right">
+                <h3 class="bottomIn-object">
+                    <div class="bottomIn-content">Scooter Accessories</div>
+                </h3>
+                <div class="work-content slidein-object">
+                    選擇車款配件
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup4.png" alt="">
+        </div>
+        <div class="mockup-top-left">
+            <div class="mockup-top-left-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Grouping, Friendly, Easy</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    群組化配件，相同類型一次掌握，不須辛苦滾動搜尋。
+                    若需加購前置配件，彈窗內直接顯示，並可直接加購。
+                </div>
+            </div>
+            <div class="mockup-img loop-assets slidein-object">
+                <img class="mockup-reveal reveal-in" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup5.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup5-1.png" alt="">
+                <img class="mockup-reveal" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup5-2.png" alt="">
+                <img src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup5.png" alt="">
+            </div>
+        </div>
+        <div class="mockup-right darker-bg">
+            <div class="mockup-right-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Take it easy</div>
+                </h2>
+                <div class="work-content slidein-object">
+                    打造完不一定想買？ 別擔心，填寫信箱就能拿到報價單。
+                    社恐？ 不怕，先收藏也可，有購買優惠還會通知你！
+                    <br/><br/>
+                    打造愛車的使用者依照購買意願會有不同的期望與需求，所以依據需求提供相對應的入口，就能提升整個流程的轉換率。
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup6.png" alt="">
+        </div>
+        <div class="mockup-full">
+            <div class="mockup-full-text bottom-right white-content">
+                <h3 class="bottomIn-object">
+                    <div class="bottomIn-content">Mobile Design</div>
+                </h3>
+                <div class="work-content slidein-object">
+                    行動裝置設計
+                </div>
+            </div>
+            <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup7.png" alt="">
+        </div>
+        <div class="mockup-split">
+            <div class="mockup-split-left title-split">
+                <div class="mockup-split-left-block">
+                    <h2 class="bottomIn-object">
+                        <div class="bottomIn-content">Quick swipe</div>
+                    </h2>
+                    <div class="work-content slidein-object">
+                        手機體驗不將就，單指滑動快速瀏覽配件。
+                    </div>
+                </div>
+                <img class="slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-wireframe.png" alt="">
+            </div>
+            <div class="mockup-split-right watermark-split">
+                <div class="mockup-watermark bottomIn-object">
+                    <div class="bottomIn-content">Quick Swipe</div>
+                </div>
+                <div class="mockup-split-video-block slidein-object">
+                    <video class="mockup-split-video" src="images/gogoro-buildascooter/img-gogoro-buildascooter-video.mp4" muted loop autoplay playsinline> <!-- 有 playsinline 手機才會自動播放-->
+                        <source data-src="images/gogoro-buildascooter/img-gogoro-buildascooter-video.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="mockup-center mockup-end darker-bg">
+            <div class="center-block">
+                <h2 class="bottomIn-object">
+                    <div class="bottomIn-content">Other<br/>Mobile UI</div>
+                </h2>
+            </div>
+            <img class="work-img slidein-object" src="images/gogoro-buildascooter/img-gogoro-buildascooter-mockup8.png" alt="">
+        </div>
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    尚未加入產品公司前，一直期望著可以了解產品公司如何運用手邊資源來優化產品，雖然這不是正式專案，但我也藉此機會去運用門市資源、分析數據來收集與驗證。
+                    <br/><br/>
+                    後續即使沒有轉為正式專案去開發出來，但<b>我個人蠻享受可以實際訪談，將這些觀點拿來優化產品的過程。</b>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-gogoro-gds.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">Gogoro Dianostic System - 車輛診斷系統優化</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="images/gogoro-gds/img-gogoro-gds-cover.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

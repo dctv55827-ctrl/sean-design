@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script>
+        $(window).load(function() {	
+            var windowH = $(window).height();
+            $(window).scroll(function() {
+                var scrollVal = $(this).scrollTop();
+                if(scrollVal > windowH){
+                    $("header").removeClass("white");
+                    if(scrollVal > $(".final-work").offset().top){
+                        $("header.inside").addClass("white");
+                    }
+                    if(scrollVal > $(".work-learning").offset().top){
+                        $("header.inside").removeClass("white");
+                    }
+                }
+                /*if(scrollVal < windowH){
+                    $("header.inside").addClass("white")
+                }*/
+            })
+            //重新整理時觸發scroll
+            $(window).trigger('scroll');
+
+            //手機選單
+            $(".mobile-menu-btn").click(function(){
+                $("header.inside").toggleClass("open")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--載入動畫-->
+    <div id="loader">
+        <div class="number"><span>99</span>%</div>
+        <div class="circle"></div>
+    </div>
+    <!--頁首-->
+    <header class="inside bottomIn-object">
+        <div class="bottomIn-content">
+            <a class="header-logo" href="index.html"></a>
+            <ul class="menu-list">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+            <div class="language">
+                <a href="en/work-xnfun.html">En</a>
+            </div>
+            <!--手機Menu按鈕-->
+            <ul class="mobile-menu-btn">
+                <li class="menu-btn-top"></li>
+                <li class="menu-btn-middle"></li>
+                <li class="menu-btn-bottom"></li>
+            </ul>
+        </div>
+    </header>
+    <!--手機Menu-->
+    <div class="mobile-menu">
+        <div class="mobile-menu-center">
+            <ul class="mobile-menu-list">
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="about.html">About</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="Resume_Sean.pdf" target="_blank">Resume</a>
+                    </div>
+                </li>
+                <div class="mobile-menu-divider"></div>
+                <li>
+                    <div class="bottomIn-content">
+                        <a href="en/work-xnfun.html">En</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--手機Menu結束-->
+    <!--回上方-->
+    <img class="scroll-top" src="images/icon-arrow-top.svg" alt="">
+    <!--回上方結束-->
+    <section class="work-intro">
+        <div class="center-block slidein-object">
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">UI/UX Design</div>
+            </div>
+            <h1 class="bottomIn-object">
+                <div class="bottomIn-content">XnFun儲存伺服器App</div>
+            </h1>
+        </div>
+        <img class="work-img slidein-object" src="images/xnfun/img-xnfun-full.png" alt="">
+    </section>
+    <div class="center-block">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Overview</div>
+            <div class="work-content">
+                XnFun App 為 XnBay智慧儲存伺服器(私有雲)的專屬 App，Xnbay主打免月費、絕對私密、容量爆表的儲存空間，透過 XnFun App 就能輕鬆傳輸、管理檔案。
+                <br/><br/>
+                一開始客戶已經有完成的XnFun App，只是UI設計較陽春，所以希望我們幫忙重新設計視覺，後續順利合作之後又加了一些新的功能讓我們連UX也一起設計，像是音樂播放功能。
+                <ul class="work-point">
+                    <li>
+                        <div class="point-tit">Role</div>
+                        UI/UX Designer
+                    </li>
+                    <li>
+                        <div class="point-tit">Duration</div>
+                        6 month
+                    </li>
+                    <li>
+                        <div class="point-tit">Team</div>
+                        1 PM, 1 Designer, 2 Developer
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Challenge</div>
+            <div class="work-content">
+                由於XnFun App是<b>必須與私有雲串接才能操作所有功能，所以要做競品分析時就顯得十分困難</b>，因為不是安裝App就好，也要必須擁有該私有雲伺服器。
+            </div>
+        </div>
+        <img class="work-img slidein-object" src="images/xnfun/img-xnfun.png" alt="">
+        <div class="work-block slidein-object">
+            <div class="sec-tit">Reskin</div>
+            <div class="work-content">
+                由於XnFun還是屬於多媒體內容呈現為主的App，所以Reskin的策略還是以不影響內容瀏覽為主。
+                <br/><br/>
+                整體版型參考Facebook、Instagram的簡約風格，主色沿用Logo的藍色，花較多的時間在空狀態的插圖上來增加產品辨識度，也可以舒緩使用者操作、等待時的焦慮感。
+            </div>
+        </div>
+        <img class="work-img slidein-object shadow" src="images/xnfun/img-xnfun-empty status.png" alt="">
+    </div>
+    <section class="final-work xnfun">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Final Design</div>
+        </h2>
+        <div class="final-work-block size-s">
+            <img class="slidein-object" src="images/xnfun/img-xnfun-intro.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">歡迎頁</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        利用插畫加入品牌色來加強產品連結性，也增添產品趣味，讓第一次登入的使用者可以更放鬆的使用App。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-s align-r">
+            <img class="slidein-object" src="images/xnfun/img-xnfun-localfile.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">本機檔案</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        採用潔簡的版型讓使用者更專注在自己的檔案內容。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l">
+            <img class="slidein-object" src="images/xnfun/img-xnfun-xnbayfile.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">XnBay管理</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        利用不同版型來區分功能類型，讓使用者在瀏覽檔案時可以更快速的分辨不同的功能。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l align-r">
+            <img class="slidein-object" src="images/xnfun/img-xnfun-story.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">故事</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        美好的回憶可以構成一個動人的故事，XnFun的故事可以分享給家庭成員或朋友，也加入了社群的「按讚、留言、分享」功能，透過互動讓回憶更溫暖。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l">
+            <img class="slidein-object" src="images/xnfun/img-xnfun-account.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">我的帳號</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        透過我的帳號去管理各種設定與操作項目，包含最重要的備份設定，透過卡片的形式來呈現各個本地資料夾，方便使用者追蹤備份進度。
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-work-block size-l align-r">
+            <img class="slidein-object" src="images/xnfun/img-xnfun-music.png" alt="">
+            <div class="final-work-text">
+                <div class="sub-tit bottomIn-object">
+                    <div class="bottomIn-content">音樂</div>
+                </div>
+                <div class="content-txt bottomIn-object">
+                    <div class="bottomIn-content">
+                        音樂屬於新功能，所以包含UX也需要重新構想，流程與介面參考Spotify與KKBOX，再融入XnFun的現有流程，希望使用者在操作時可以像一般音樂型App順暢地聆聽音樂。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-learning">
+        <div class="center-block">
+            <h2 class="bottomIn-object">
+                <div class="bottomIn-content">Learnings</div>
+            </h2>
+            <div class="content-txt bottomIn-object">
+                <div class="bottomIn-content">
+                    雖然一開始是Reskin，但我也必須了解現有的流程與架構，對檔案管理類App也做了許多研究，例如：Google Drive，在這之中也對備份與檔案傳輸功能有了更多的了解。
+                    <br/><br/>
+                    而新加入的音樂功能也讓我有機會深入音樂播放的細節，<b>像是隨機播放的邏輯與待播清單的影響</b>。整體來說算是蠻有趣的設計過程，也算是我少數接觸To C的產品。
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="next-work">
+        <h2 class="bottomIn-object">
+            <div class="bottomIn-content">Next Work</div>
+        </h2>
+        <a class="next-work-content slidein-object" href="work-proposal.html">
+            <div class="next-work-desc">
+                <div class="next-work-tit">2019-2021 設計提案</div>
+                <p>UI UX Design</p>
+            </div>
+            <div class="mask"></div>
+            <img src="images/proposal/img-proposal.png" alt="">
+        </a>
+    </section>
+    <footer class="index-footer">
+        <div class="sec-tit">Contact</div>
+        <div class="footer-main">
+            <div class="footer-tit bottomIn-object">
+                <div class="bottomIn-content">Get In Touch</div>
+            </div>
+            <ul class="index-contact-list">
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">09-7973-3877</div>
+                </li>
+                <li class="bottomIn-object">
+                    <div class="bottomIn-content">dctv55827@gmail.com</div>
+                </li>
+            </ul>
+            <div class="line"></div>
+            <div class="footer-caption bottomIn-object">
+                <div class="bottomIn-content">It’s ok, take your time</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
